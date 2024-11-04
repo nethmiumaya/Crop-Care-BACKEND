@@ -20,8 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class VehicleController {
 
-    @Autowired
-    private  VehicleService vehicleService;
+    private final VehicleService vehicleService;
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createVehicle(@RequestBody VehicleDTO vehicleDTO){
