@@ -1,8 +1,10 @@
 package lk.ijse.main.util;
 
 import lk.ijse.main.dto.EquipmentDTO;
+import lk.ijse.main.dto.StaffDTO;
 import lk.ijse.main.dto.VehicleDTO;
 import lk.ijse.main.entity.Equipment;
+import lk.ijse.main.entity.Staff;
 import lk.ijse.main.entity.Vehicle;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -34,5 +36,15 @@ public class Mapping {
     }
     public List<EquipmentDTO> convertToEquipmentDTO(List <Equipment>equipment){
         return modelMapper.map(equipment, new TypeToken<List<EquipmentDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+    }
+
+    public StaffDTO convertToStaffDTO(Staff staff){
+        return modelMapper.map(staff, StaffDTO.class);
+    }
+    public Staff convertToStaffEntity (StaffDTO dto){
+        return modelMapper.map(dto,Staff.class);
+    }
+    public List<StaffDTO> convertToStaffDTO(List <Staff>staff){
+        return modelMapper.map(staff, new TypeToken<List<StaffDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
 }

@@ -1,6 +1,7 @@
 package lk.ijse.main.service.impl;
 
 import jakarta.transaction.Transactional;
+import lk.ijse.main.customObj.EquipmentErrorResponse;
 import lk.ijse.main.customObj.EquipmentResponse;
 import lk.ijse.main.repository.EquipmentRepository;
 import lk.ijse.main.dto.EquipmentDTO;
@@ -10,6 +11,7 @@ import lk.ijse.main.exception.EquipmentNotFoundException;
 import lk.ijse.main.service.EquipmentService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,12 +20,11 @@ import java.util.Optional;
 
 @Service
 @Transactional
+@RequiredArgsConstructor
 public class EquipmentServiceImpl implements EquipmentService {
 
-    @Autowired
-    private EquipmentRepository equipmentRepository;
-    @Autowired
-    private Mapping mapping;
+    private final EquipmentRepository equipmentRepository;
+    private final Mapping mapping;
 
     @Override
     public void saveEquipment(EquipmentDTO equipmentDTO) {
@@ -66,11 +67,10 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     @Override
     public EquipmentResponse getSelectEquipment(String equipmentCode) {
-//        if(equipmentDao.existsById(equipmentCode)){
-//            return mapping.convertToEquipmentDTO(equipmentDao.getReferenceById(equipmentCode));
-//        }else {
-//            return new EquipmentErrorResponse(0,"Note not found");
-//        }
-        return null;
+        if (equipmentRepository.existsById(equipmentCode)) {
+            return mapping.convertToEquipmentDTO(equipmentRepository.getReferenceById(equipmentCode));
+        } else {
+            return new EquipmentErrorResponse(0, "Note not found");
+        }
     }
 }

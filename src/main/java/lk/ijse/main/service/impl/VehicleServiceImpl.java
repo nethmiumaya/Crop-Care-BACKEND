@@ -23,11 +23,8 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class VehicleServiceImpl implements VehicleService {
 
-    @Autowired
-    private VehicleRepository vehicleRepository;
-
-    @Autowired
-    private Mapping mapping;
+    private final VehicleRepository vehicleRepository;
+    private final Mapping mapping;
 
     @Override
     public void saveVehicle(VehicleDTO vehicleDTO) {
