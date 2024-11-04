@@ -3,7 +3,7 @@ package lk.ijse.main.service.impl;
 import jakarta.transaction.Transactional;
 import lk.ijse.main.customObj.VehicleErrorResponse;
 import lk.ijse.main.customObj.VehicleResponse;
-import lk.ijse.main.dao.VehicleDao;
+import lk.ijse.main.repository.VehicleRepository;
 import lk.ijse.main.dto.VehicleDTO;
 import lk.ijse.main.entity.Vehicle;
 import lk.ijse.main.exception.DataPersistFailedException;
@@ -24,7 +24,7 @@ import java.util.Optional;
 public class VehicleServiceImpl implements VehicleService {
 
     @Autowired
-    private  VehicleDao vehicleDao;
+    private VehicleRepository vehicleRepository;
 
     @Autowired
     private Mapping mapping;
@@ -34,7 +34,7 @@ public class VehicleServiceImpl implements VehicleService {
 
         vehicleDTO.setVehicleCode(Util.createVehicleCode());
         Vehicle savedVehicle =
-                vehicleDao.save(mapping.convertToVehicleEntity(vehicleDTO));
+                vehicleRepository.save(mapping.convertToVehicleEntity(vehicleDTO));
         if (savedVehicle == null && savedVehicle.getVehicleCode() == null){
             throw new DataPersistFailedException("Cannot data saved");
         }
@@ -43,7 +43,7 @@ public class VehicleServiceImpl implements VehicleService {
     @Override
     public void updateVehicle(String vehicleCode,VehicleDTO vehicleDTO) {
         Optional<Vehicle> tmpvehicleEntity =
-                vehicleDao.findById(vehicleCode);
+                vehicleRepository.findById(vehicleCode);
 
         if (!tmpvehicleEntity.isPresent()){
             throw new VehicleNotFound("Vehicle not Found");
@@ -58,23 +58,23 @@ public class VehicleServiceImpl implements VehicleService {
 
     @Override
     public void deleteVehicle(String vehicleCode) {
-        Optional<Vehicle> findId = vehicleDao.findById(vehicleCode);
+        Optional<Vehicle> findId = vehicleRepository.findById(vehicleCode);
         if (!findId.isPresent()){
             throw new VehicleNotFound("Vehicle not found");
         }else {
-            vehicleDao.deleteById(vehicleCode);
+            vehicleRepository.deleteById(vehicleCode);
         }
     }
 
     @Override
     public List<VehicleDTO> getAllVehicle() {
-        return mapping.convertToVehicleDTO(vehicleDao.findAll());
+        return mapping.convertToVehicleDTO(vehicleRepository.findAll());
     }
 
     @Override
     public VehicleResponse getSelectVehicle(String vehicleCode) {
-        if (vehicleDao.existsById(vehicleCode)){
-            return mapping.convertToVehicleDTO(vehicleDao.getReferenceById(vehicleCode));
+        if (vehicleRepository.existsById(vehicleCode)){
+            return mapping.convertToVehicleDTO(vehicleRepository.getReferenceById(vehicleCode));
         }else {
             return new VehicleErrorResponse(0,"VEHICLE NOTE FOUND");
         }

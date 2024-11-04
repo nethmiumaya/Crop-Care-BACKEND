@@ -1,9 +1,8 @@
 package lk.ijse.main.service.impl;
 
 import jakarta.transaction.Transactional;
-import lk.ijse.main.customObj.EquipmentErrorResponse;
 import lk.ijse.main.customObj.EquipmentResponse;
-import lk.ijse.main.dao.EquipmentDao;
+import lk.ijse.main.repository.EquipmentRepository;
 import lk.ijse.main.dto.EquipmentDTO;
 import lk.ijse.main.entity.Equipment;
 import lk.ijse.main.exception.DataPersistFailedException;
@@ -22,7 +21,7 @@ import java.util.Optional;
 public class EquipmentServiceImpl implements EquipmentService {
 
     @Autowired
-    private EquipmentDao equipmentDao;
+    private EquipmentRepository equipmentRepository;
     @Autowired
     private Mapping mapping;
 
@@ -30,7 +29,7 @@ public class EquipmentServiceImpl implements EquipmentService {
     public void saveEquipment(EquipmentDTO equipmentDTO) {
     equipmentDTO.setEquipmentCode(Util.createEquipmentCode());
     var EquipmentEntity = mapping.convertToEquipmentEntity(equipmentDTO);
-    var savedEquipment = equipmentDao.save(EquipmentEntity);
+    var savedEquipment = equipmentRepository.save(EquipmentEntity);
     if(savedEquipment == null){
         throw new DataPersistFailedException("Cannot data saved");
     }
@@ -39,7 +38,7 @@ public class EquipmentServiceImpl implements EquipmentService {
     @Override
     public void updateEquipment(String equipmentCode, EquipmentDTO equipmentDTO) {
         Optional<Equipment> tmpEquipmentEntity =
-                equipmentDao.findById(equipmentCode);
+                equipmentRepository.findById(equipmentCode);
         if (!tmpEquipmentEntity.isPresent()){
             throw new EquipmentNotFoundException("Equipment not Found");
         }else {
@@ -52,17 +51,17 @@ public class EquipmentServiceImpl implements EquipmentService {
 
     @Override
     public void deleteEquipment(String equipmentCode) {
-        Optional<Equipment> findId = equipmentDao.findById(equipmentCode);
+        Optional<Equipment> findId = equipmentRepository.findById(equipmentCode);
         if(findId.isPresent()){
             throw new EquipmentNotFoundException("Equipment not Found");
         }else {
-            equipmentDao.deleteById(equipmentCode);
+            equipmentRepository.deleteById(equipmentCode);
         }
     }
 
     @Override
     public List<EquipmentDTO> getAllEquipment() {
-        return mapping.convertToEquipmentDTO(equipmentDao.findAll());
+        return mapping.convertToEquipmentDTO(equipmentRepository.findAll());
     }
 
     @Override
