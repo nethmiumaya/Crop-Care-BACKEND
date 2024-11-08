@@ -1,9 +1,10 @@
 package lk.ijse.main.repository;
 
-import lk.ijse.main.entity.Crop;
+import lk.ijse.main.entity.Field;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CropRepository extends JpaRepository<Crop,String> {
+public interface FieldRepository extends JpaRepository<Field,String> {
+    Field getFieldByFieldId(String fieldId);
 }

@@ -39,4 +39,6 @@ public class Field implements SuperEntity{
 
     @OneToMany(mappedBy = "field")
     private List<MonitoringLog> monitoringLogs = new ArrayList<>();
+
+
 }

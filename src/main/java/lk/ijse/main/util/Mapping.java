@@ -1,13 +1,7 @@
 package lk.ijse.main.util;
 
-import lk.ijse.main.dto.CropDTO;
-import lk.ijse.main.dto.EquipmentDTO;
-import lk.ijse.main.dto.StaffDTO;
-import lk.ijse.main.dto.VehicleDTO;
-import lk.ijse.main.entity.Crop;
-import lk.ijse.main.entity.Equipment;
-import lk.ijse.main.entity.Staff;
-import lk.ijse.main.entity.Vehicle;
+import lk.ijse.main.dto.*;
+import lk.ijse.main.entity.*;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,4 +53,15 @@ public class Mapping {
     public List<CropDTO> convertToCropDTO(List <Crop> crops){
         return modelMapper.map(crops, new TypeToken<List<CropDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
+
+    public FieldDTO convertToFieldDTO(Field field){
+        return modelMapper.map(field, FieldDTO.class);
+    }
+    public Field convertToFieldEntity (FieldDTO dto){
+        return modelMapper.map(dto,Field.class);
+    }
+    public List<FieldDTO> convertToFieldDTO(List <Field> fields){
+        return modelMapper.map(fields, new TypeToken<List<FieldDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+    }
+
 }
