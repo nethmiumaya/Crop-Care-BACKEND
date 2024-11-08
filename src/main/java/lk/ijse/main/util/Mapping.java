@@ -1,8 +1,10 @@
 package lk.ijse.main.util;
 
+import lk.ijse.main.dto.CropDTO;
 import lk.ijse.main.dto.EquipmentDTO;
 import lk.ijse.main.dto.StaffDTO;
 import lk.ijse.main.dto.VehicleDTO;
+import lk.ijse.main.entity.Crop;
 import lk.ijse.main.entity.Equipment;
 import lk.ijse.main.entity.Staff;
 import lk.ijse.main.entity.Vehicle;
@@ -46,5 +48,15 @@ public class Mapping {
     }
     public List<StaffDTO> convertToStaffDTO(List <Staff>staff){
         return modelMapper.map(staff, new TypeToken<List<StaffDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+    }
+
+    public CropDTO convertToCropDTO(Crop crop){
+        return modelMapper.map(crop, CropDTO.class);
+    }
+    public Crop convertToCropEntity (CropDTO dto){
+        return modelMapper.map(dto,Crop.class);
+    }
+    public List<CropDTO> convertToCropDTO(List <Crop> crops){
+        return modelMapper.map(crops, new TypeToken<List<CropDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
 }
