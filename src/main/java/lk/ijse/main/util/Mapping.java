@@ -64,4 +64,14 @@ public class Mapping {
         return modelMapper.map(fields, new TypeToken<List<FieldDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
 
+    public MonitoryLogDTO convertToMonitoryLogDTO(MonitoringLog monitoringLog){return modelMapper.map(monitoringLog, MonitoryLogDTO.class);
+    }
+    public MonitoringLog convertToMonitoryLogEntity(MonitoryLogDTO monitoryLogDTO) {
+        MonitoringLog monitoringLog = new MonitoringLog();
+        return monitoringLog;
+    }
+    public List<MonitoryLogDTO> convertToMonitoryLogDTO(List <MonitoringLog> monitoryLogDTOS){
+        return modelMapper.map(monitoryLogDTOS, new TypeToken<List<MonitoryLogDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+    }
+
 }

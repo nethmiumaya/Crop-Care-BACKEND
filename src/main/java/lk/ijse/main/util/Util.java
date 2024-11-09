@@ -1,7 +1,10 @@
 package lk.ijse.main.util;
 
 import java.awt.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Base64;
+import java.util.Date;
 import java.util.UUID;
 
 public class Util {
@@ -24,6 +27,10 @@ public class Util {
         return UUID.randomUUID().toString();
     }
 
+    public static String createLogCode(){
+        return UUID.randomUUID().toString();
+    }
+
     public static String toBase64ProfilePic(byte [] cropImage){
         return Base64.getEncoder().encodeToString(cropImage);
     }
@@ -43,4 +50,13 @@ public class Util {
     }
 
 
+
+    public static Date parseDate(String logDate) {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            return formatter.parse(logDate);
+        } catch (ParseException e) {
+            throw new IllegalArgumentException("Invalid date format: " + logDate, e);
+        }
+    }
 }
