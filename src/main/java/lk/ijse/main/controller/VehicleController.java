@@ -3,11 +3,10 @@ package lk.ijse.main.controller;
 import lk.ijse.main.customObj.VehicleResponse;
 import lk.ijse.main.dto.VehicleDTO;
 import lk.ijse.main.exception.DataPersistFailedException;
-import lk.ijse.main.exception.VehicleNotFound;
+import lk.ijse.main.exception.StaffNotFoundException;
+import lk.ijse.main.exception.VehicleNotFoundException;
 import lk.ijse.main.service.VehicleService;
 import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -43,7 +42,7 @@ public class VehicleController {
             }
             vehicleService.updateVehicle(vehicleCode,vehicleDTO);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }catch (VehicleNotFound e){
+        }catch (VehicleNotFoundException e){
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }catch (Exception e){
             return new ResponseEntity<>
@@ -52,12 +51,27 @@ public class VehicleController {
         }
     }
 
+    @PutMapping
+    public ResponseEntity<Void> updateVehicleDriver(@RequestParam("vehicleCode") String vehicleCode,@RequestParam("driverId") String driverId){
+        try {
+            if (driverId == null && vehicleCode == null){
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            vehicleService.updateVehicleDriver(vehicleCode,driverId);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }catch (VehicleNotFoundException | StaffNotFoundException e){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e){
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @DeleteMapping(value = "/{vehicleCode}")
     public ResponseEntity<Void> deleteVehicle(@PathVariable("vehicleCode") String vehicleCode){
         try {
             vehicleService.deleteVehicle(vehicleCode);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }  catch (VehicleNotFound e){
+        }  catch (VehicleNotFoundException e){
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }catch (Exception e){
         return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

@@ -1,6 +1,14 @@
 package lk.ijse.main.service.impl;
 
-import jakarta.transaction.Transactional;
+import lk.ijse.main.entity.Crop;
+import lk.ijse.main.entity.Field;
+import lk.ijse.main.entity.Staff;
+import lk.ijse.main.exception.FieldNotFoundException;
+import lk.ijse.main.exception.StaffNotFoundException;
+import lk.ijse.main.repository.CropRepository;
+import lk.ijse.main.repository.FieldRepository;
+import lk.ijse.main.repository.StaffRepository;
+import org.springframework.transaction.annotation.Transactional;
 import lk.ijse.main.customObj.MonitoryLogResponse;
 import lk.ijse.main.dto.MonitoryLogDTO;
 import lk.ijse.main.entity.MonitoringLog;
@@ -11,7 +19,6 @@ import lk.ijse.main.service.MonitoryLogService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,18 +28,24 @@ import java.util.Optional;
 @Transactional
 @RequiredArgsConstructor
 public class MonitoryLogServiceImpl implements MonitoryLogService {
-    @Autowired
-    private final MonitoryLogRepository monitoryLogRepository;
 
+    private final MonitoryLogRepository monitoryLogRepository;
     private final Mapping mapping;
+    private final StaffRepository staffRepository;
+    private final FieldRepository fieldRepository;
+    private final CropRepository cropRepository;
 
     @Override
     public void saveMonitoryLog(MonitoryLogDTO monitoryLogDTO) {
-        monitoryLogDTO.setLogCode(Util.createLogCode());
-        MonitoringLog savedLog = monitoryLogRepository.save(mapping.convertToMonitoryLogEntity(monitoryLogDTO));
-        if (savedLog == null || savedLog.getLogCode() == null) {
-            throw new DataPersistFailedException("Monitory Log not saved");
-        }
+        monitoryLogDTO.setLogCode(Util.createMonitoryLogCode());
+        System.out.println("logCode: " + monitoryLogDTO.getLogCode());
+        MonitoringLog monitoringLog = mapping.convertToMonitoryLogEntity(monitoryLogDTO);
+        System.out.println("nidimathai  "+ monitoringLog.getObservedImage());
+        Field field = fieldRepository.findById(monitoryLogDTO.getFieldId())
+                .orElseThrow(() -> new FieldNotFoundException("Field not found"));
+        monitoringLog.setField(field);
+        System.out.println("puus  "+ monitoringLog.getLogCode());
+       monitoryLogRepository.save(monitoringLog);
     }
 
     @Override
@@ -41,10 +54,34 @@ public class MonitoryLogServiceImpl implements MonitoryLogService {
         if (!tmpLogEntity.isPresent()) {
             throw new MonitoryLogException("Monitory Log not found");
         } else {
-            tmpLogEntity.get().setLogDate(Util.parseDate(monitoryLogDTO.getLogDate()));
+            tmpLogEntity.get().setLogDate(monitoryLogDTO.getLogDate());
             tmpLogEntity.get().setObservation(monitoryLogDTO.getObservation());
-            tmpLogEntity.get().setObservedImage(String.valueOf(monitoryLogDTO.getLogImage()));
+            tmpLogEntity.get().setObservedImage(String.valueOf(monitoryLogDTO.getObservedImage()));
         }
+    }
+
+    @Override
+    public void updateMonitoryLogStaff(List<String> staff, String logCode) {
+        MonitoringLog monitoringLog = monitoryLogRepository.findById(logCode)
+                .orElseThrow(() -> new MonitoryLogException("Monitory Log Not Found"));
+        List<Staff> staffList = staffRepository.findAllById(staff);
+        if (staffList.size() != staff.size()) {
+            throw new StaffNotFoundException("One or more staff not found");
+        }
+        monitoringLog.setStaff(staffList);
+        monitoryLogRepository.save(monitoringLog);
+    }
+
+    @Override
+    public void updateMonitoryLogCrops(List<String> crops, String logCode) {
+        MonitoringLog monitoringLog = monitoryLogRepository.findById(logCode)
+                .orElseThrow(() -> new MonitoryLogException("Monitory Log Not Found"));
+        List<Crop> crops1 = cropRepository.findAllById(crops);
+        if (crops1.size() != crops.size()) {
+            throw new StaffNotFoundException("One or more staff not found");
+        }
+        monitoringLog.setCrops(crops1);
+        monitoryLogRepository.save(monitoringLog);
     }
 
     @Override

@@ -4,8 +4,6 @@ import lk.ijse.main.customObj.FieldResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.web.multipart.MultipartFile;
-
 import java.util.List;
 
 @AllArgsConstructor
@@ -16,10 +14,10 @@ public class FieldDTO implements SuperDTO, FieldResponse {
     private String fieldName;
     private String fieldLocation;
     private String extentSize;
-    private MultipartFile fieldImage1;
-    private MultipartFile fieldImage2;
-    private List<CropDTO> cropDTOS;
-    private List<StaffDTO> staffDTOS;
-    private List<EquipmentDTO> equipmentDTOS;
-    private List<MonitoryLogDTO> monitoringLogDTOS;
+    private String fieldImage1;
+    private String fieldImage2;
+//    private List<CropDTO> cropDTOS;
+//    private List<StaffDTO> staffDTOS;
+//    private List<EquipmentDTO> equipmentDTOS;
+//    private List<MonitoryLogDTO> monitoringLogDTOS;
 }

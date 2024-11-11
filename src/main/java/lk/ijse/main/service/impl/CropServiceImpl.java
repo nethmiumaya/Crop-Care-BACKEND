@@ -5,9 +5,11 @@ import lk.ijse.main.customObj.CropErrorResponse;
 import lk.ijse.main.customObj.CropResponse;
 import lk.ijse.main.dto.CropDTO;
 import lk.ijse.main.entity.Crop;
+import lk.ijse.main.entity.Field;
 import lk.ijse.main.exception.CropNotFoundException;
 import lk.ijse.main.exception.DataPersistFailedException;
 import lk.ijse.main.repository.CropRepository;
+import lk.ijse.main.repository.FieldRepository;
 import lk.ijse.main.service.CropService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
@@ -23,6 +25,7 @@ import java.util.Optional;
 public class CropServiceImpl implements CropService {
 
     private final CropRepository cropRepository;
+    private final FieldRepository fieldRepository;
     private final Mapping mapping;
 
     @Override
@@ -47,6 +50,15 @@ public class CropServiceImpl implements CropService {
             tmpCrop.get().setSeason(cropDTO.getSeason());
            // tmpCrop.get().setField(mapping.convertToFieldEntity(cropDTO.getField()));
         }
+    }
+
+    @Override
+    public void updateCropField(String cropId, String fieldId) {
+        Crop crop = cropRepository.findById(cropId)
+                .orElseThrow(() -> new CropNotFoundException("Crop not found"));
+        Field field = fieldRepository.findById(fieldId)
+                .orElseThrow(() -> new CropNotFoundException("Field not found"));
+        crop.setField(field);
     }
 
     @Override

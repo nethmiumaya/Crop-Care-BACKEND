@@ -1,5 +1,7 @@
 package lk.ijse.main.entity;
 
 public enum Gender {
-    STAFF
+    MALE,
+    FEMALE,
+    OTHER
 }

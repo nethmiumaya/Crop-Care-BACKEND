@@ -14,6 +14,8 @@ import lk.ijse.main.service.StaffService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,40 +26,56 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class StaffServiceImpl implements StaffService {
 
+    private static final Logger logger = LoggerFactory.getLogger(StaffServiceImpl.class);
     private final StaffRepository staffRepository;
     private final Mapping mapping;
 
     @Override
     public void saveStaff(StaffDTO dto) {
+        System.out.println(dto.getGender() + "GAYANUKA");
         dto.setId(Util.createStaffId());
-        Staff savedStaff = staffRepository.save(mapping.convertToStaffEntity(dto));
-        if (savedStaff == null || savedStaff.getId() == null) {
-            throw new DataPersistFailedException("Staff not saved");
+        Staff savedStaff = mapping.convertToStaffEntity(dto);
+        savedStaff.setRole(Role.valueOf(dto.getRole()));
+        savedStaff.setGender(Gender.valueOf(dto.getGender()));
+        try {
+            staffRepository.save(savedStaff);
+        } catch (Exception e) {
+            e.printStackTrace();
+            logger.error("Error saving staff: ", e);
+            throw new DataPersistFailedException("Error saving staff");
         }
     }
 
     @Override
-    public void updateStaff(StaffDTO dto) {
-        Optional<Staff> tmpStaff = staffRepository.findById(dto.getId());
-        if (!tmpStaff.isPresent()) {
-            throw new StaffNotFoundException("Staff not found");
-        } else {
-            tmpStaff.get().setFirstName(dto.getFirstName());
-            tmpStaff.get().setLastName(dto.getLastName());
-            tmpStaff.get().setDesignation(dto.getDesignation());
-            tmpStaff.get().setGender(Gender.valueOf(dto.getGender()));
-            tmpStaff.get().setJoinDate(dto.getJoinDate());
-            tmpStaff.get().setDOB(dto.getDOB());
-            tmpStaff.get().setAddLine01(dto.getAddLine01());
-            tmpStaff.get().setAddLine02(dto.getAddLine02());
-            tmpStaff.get().setAddLine03(dto.getAddLine03());
-            tmpStaff.get().setAddLine04(dto.getAddLine04());
-            tmpStaff.get().setAddLine05(dto.getAddLine05());
-            tmpStaff.get().setConNo(dto.getConNo());
-            tmpStaff.get().setEmail(dto.getEmail());
-            tmpStaff.get().setRole(Role.valueOf(dto.getRole()));
-        }
+    public void updateStaff(String id,StaffDTO dto) {
+        logger.info("Starting updateStaff method");
+        try {
+            Optional<Staff> tmpStaff = staffRepository.findById(id);
+            if (!tmpStaff.isPresent()) {
+                logger.error("StaffNotFoundException: Staff not found");
+                throw new StaffNotFoundException("Staff not found");
+            } else {
+                Staff staff = tmpStaff.get();
+                staff.setFirstName(dto.getFirstName());
+                staff.setLastName(dto.getLastName());
+                staff.setDesignation(dto.getDesignation());
+                staff.setGender(Gender.valueOf(dto.getGender()));
+                staff.setJoinDate(dto.getJoinDate());
+                staff.setDOB(dto.getDOB());
+                staff.setAddLine01(dto.getAddLine01());
+                staff.setAddLine02(dto.getAddLine02());
+                staff.setAddLine03(dto.getAddLine03());
+                staff.setAddLine04(dto.getAddLine04());
+                staff.setAddLine05(dto.getAddLine05());
+                staff.setConNo(dto.getConNo());
+                staff.setEmail(dto.getEmail());
+                staff.setRole(Role.valueOf(dto.getRole()));
+                staffRepository.save(staff);
+            }
+    }catch (Exception e) {
+        throw e;
     }
+}
 
     @Override
     public void deleteStaff(String id) {

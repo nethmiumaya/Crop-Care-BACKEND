@@ -24,14 +24,18 @@ public class Mapping {
         return modelMapper.map(vehicles, new TypeToken<List<VehicleDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
 
-    public EquipmentDTO convertToEquipmentDTO(Equipment equipment){
+
+
+    public EquipmentDTO convertToEquipmentDTO(Equipment equipment) {
         return modelMapper.map(equipment, EquipmentDTO.class);
     }
-    public Equipment convertToEquipmentEntity (EquipmentDTO dto){
-        return modelMapper.map(dto,Equipment.class);
+
+    public Equipment convertToEquipmentEntity(EquipmentDTO dto) {
+        return modelMapper.map(dto, Equipment.class);
     }
-    public List<EquipmentDTO> convertToEquipmentDTO(List <Equipment>equipment){
-        return modelMapper.map(equipment, new TypeToken<List<EquipmentDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+
+    public List<EquipmentDTO> convertToEquipmentDTO(List<Equipment> equipment) {
+        return modelMapper.map(equipment, new TypeToken<List<EquipmentDTO>>() {}.getType());
     }
 
     public StaffDTO convertToStaffDTO(Staff staff){
@@ -41,8 +45,7 @@ public class Mapping {
         return modelMapper.map(dto,Staff.class);
     }
     public List<StaffDTO> convertToStaffDTO(List <Staff>staff){
-        return modelMapper.map(staff, new TypeToken<List<StaffDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
-    }
+        return modelMapper.map(staff, new TypeToken<List<StaffDTO>>() {}.getType());  }
 
     public CropDTO convertToCropDTO(Crop crop){
         return modelMapper.map(crop, CropDTO.class);
@@ -51,27 +54,26 @@ public class Mapping {
         return modelMapper.map(dto,Crop.class);
     }
     public List<CropDTO> convertToCropDTO(List <Crop> crops){
-        return modelMapper.map(crops, new TypeToken<List<CropDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
-    }
+        return modelMapper.map(crops, new TypeToken<List<CropDTO>>() {}.getType());     }
 
-    public FieldDTO convertToFieldDTO(Field field){
+    public FieldDTO convertToFieldDTO(Field field) {
         return modelMapper.map(field, FieldDTO.class);
     }
-    public Field convertToFieldEntity (FieldDTO dto){
-        return modelMapper.map(dto,Field.class);
+
+    public Field convertToFieldEntity(FieldDTO dto) {
+        return modelMapper.map(dto, Field.class);
     }
-    public List<FieldDTO> convertToFieldDTO(List <Field> fields){
-        return modelMapper.map(fields, new TypeToken<List<FieldDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+
+    public List<FieldDTO> convertToFieldDTO(List<Field> fields) {
+        return modelMapper.map(fields, new TypeToken<List<FieldDTO>>() {}.getType());
     }
 
     public MonitoryLogDTO convertToMonitoryLogDTO(MonitoringLog monitoringLog){return modelMapper.map(monitoringLog, MonitoryLogDTO.class);
     }
     public MonitoringLog convertToMonitoryLogEntity(MonitoryLogDTO monitoryLogDTO) {
-        MonitoringLog monitoringLog = new MonitoringLog();
-        return monitoringLog;
+        return modelMapper.map(monitoryLogDTO, MonitoringLog.class);
     }
     public List<MonitoryLogDTO> convertToMonitoryLogDTO(List <MonitoringLog> monitoryLogDTOS){
-        return modelMapper.map(monitoryLogDTOS, new TypeToken<List<MonitoryLogDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
+        return modelMapper.map(monitoryLogDTOS, new TypeToken<List<MonitoryLogDTO>>() {}.getType());
     }
-
 }
