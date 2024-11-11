@@ -1,18 +1,22 @@
+// FieldServiceImpl.java
 package lk.ijse.main.service.impl;
 
-import jakarta.transaction.Transactional;
+import org.springframework.transaction.annotation.Transactional;
 import lk.ijse.main.customObj.FieldResponse;
 import lk.ijse.main.dto.FieldDTO;
 import lk.ijse.main.entity.Field;
+import lk.ijse.main.entity.Staff;
 import lk.ijse.main.exception.DataPersistFailedException;
 import lk.ijse.main.exception.FieldNotFoundException;
+import lk.ijse.main.exception.StaffNotFoundException;
 import lk.ijse.main.repository.FieldRepository;
+import lk.ijse.main.repository.StaffRepository;
 import lk.ijse.main.service.FieldService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.data.geo.Point;
 
 import java.util.List;
 import java.util.Optional;
@@ -21,16 +25,24 @@ import java.util.Optional;
 @Transactional
 @RequiredArgsConstructor
 public class FieldServiceImpl implements FieldService {
-    @Autowired
     private final FieldRepository fieldRepository;
-
+    private final StaffRepository staffRepository;
     private final Mapping mapping;
+
     @Override
     public void saveField(FieldDTO fieldDTO) {
         fieldDTO.setFieldCode(Util.createFieldCode());
-        Field savedField = fieldRepository.save(mapping.convertToFieldEntity(fieldDTO));
-        if (savedField == null && savedField.getFieldCode()==null){
-            throw new DataPersistFailedException("Cannot data saved");
+        Field field = mapping.convertToFieldEntity(fieldDTO);
+
+        // Convert field location from String to java.awt.Point
+        String[] location = fieldDTO.getFieldLocation().split(",");
+        double latitude = Double.parseDouble(location[0].trim());
+        double longitude = Double.parseDouble(location[1].trim());
+        field.setFieldLocation( new Point(latitude, longitude));
+
+        Field savedField = fieldRepository.save(field);
+        if (savedField == null || savedField.getFieldCode() == null) {
+            throw new DataPersistFailedException("Cannot save data");
         }
     }
 
@@ -38,31 +50,49 @@ public class FieldServiceImpl implements FieldService {
     public void updateField(FieldDTO fieldDTO) {
         Optional<Field> tmpFieldEntity = fieldRepository.findById(fieldDTO.getFieldCode());
         if (!tmpFieldEntity.isPresent()) {
-            throw new FieldNotFoundException("Field not Found");
+            throw new FieldNotFoundException("Field not found");
         } else {
-            tmpFieldEntity.get().setFieldName(fieldDTO.getFieldName());
+            Field field = tmpFieldEntity.get();
+            field.setFieldName(fieldDTO.getFieldName());
 
             // Convert field location from String to java.awt.Point
             String[] location = fieldDTO.getFieldLocation().split(",");
-            java.awt.Point point = new java.awt.Point(Integer.parseInt(location[0]), Integer.parseInt(location[1]));
-            tmpFieldEntity.get().setFieldLocation(point);
+            double latitude = Double.parseDouble(location[0].trim());
+            double longitude = Double.parseDouble(location[1].trim());
+            field.setFieldLocation( new Point(latitude, longitude));
 
-            tmpFieldEntity.get().setExtentSize(Double.parseDouble(fieldDTO.getExtentSize()));
-            tmpFieldEntity.get().setFieldImage1(String.valueOf(fieldDTO.getFieldImage1()));
-            tmpFieldEntity.get().setFieldImage2(String.valueOf(fieldDTO.getFieldImage2()));
+            try {
+                field.setExtentSize(Double.parseDouble(fieldDTO.getExtentSize()));
+                field.setFieldImage1(new String(fieldDTO.getFieldImage1().getBytes()));
+                field.setFieldImage2(new String(fieldDTO.getFieldImage2().getBytes()));
+                fieldRepository.save(field);
+            } catch (NumberFormatException e) {
+                throw new IllegalArgumentException("Invalid extent size: " + fieldDTO.getExtentSize(), e);
+            }
         }
     }
 
     @Override
+    public void updateStaffField( List<String> staffIds,String fieldId) {
+        Field field = fieldRepository.findById(fieldId)
+                .orElseThrow(() -> new FieldNotFoundException("Field not found"));
+        List<Staff> staffList = staffRepository.findAllById(staffIds);
+        if (staffList.size() != staffIds.size()) {
+            throw new StaffNotFoundException("One or more staff not found");
+        }
+        System.out.println("staffList = " + staffList);
+        field.setStaffList(staffList);
+        fieldRepository.save(field);
+    }
+
+    @Override
     public void deleteField(String fieldId) {
-        Optional<Field> tmpFieldEntity =
-                fieldRepository.findById(fieldId);
-        if (!tmpFieldEntity.isPresent()){
-            throw new FieldNotFoundException("Field not Found");
-        }else {
+        Optional<Field> tmpFieldEntity = fieldRepository.findById(fieldId);
+        if (!tmpFieldEntity.isPresent()) {
+            throw new FieldNotFoundException("Field not found");
+        } else {
             fieldRepository.deleteById(fieldId);
         }
-
     }
 
     @Override
@@ -72,11 +102,11 @@ public class FieldServiceImpl implements FieldService {
 
     @Override
     public FieldResponse getSelectField(String fieldId) {
-        if (fieldRepository.existsById(fieldId)){
-            Field field = fieldRepository.getFieldByFieldId(fieldId);
-            return (FieldResponse) mapping.convertToFieldDTO(field);
-        }else {
-            throw new FieldNotFoundException("Field not Found");
+        if (fieldRepository.existsById(fieldId)) {
+            Field field = fieldRepository.getFieldByFieldCode(fieldId);
+            return mapping.convertToFieldDTO(field);
+        } else {
+            throw new FieldNotFoundException("Field not found");
         }
     }
 }

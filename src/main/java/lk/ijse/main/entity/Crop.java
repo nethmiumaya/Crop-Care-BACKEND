@@ -23,7 +23,7 @@ public class Crop implements SuperEntity{
     private String category;
     private String season;
     @ManyToOne
-    @JoinColumn(name = "field_id", referencedColumnName = "fieldCode")
+    @JoinColumn(name = "field_id")
     private Field field;
 
     @ManyToMany(mappedBy = "crops")

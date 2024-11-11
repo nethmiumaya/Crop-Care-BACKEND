@@ -1,5 +1,6 @@
 package lk.ijse.main.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lk.ijse.main.customObj.StaffResponse;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +18,9 @@ public class StaffDTO implements SuperDTO, StaffResponse {
     private String lastName;
     private String designation;
     private String gender;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     private Date joinDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy/MM/dd")
     private Date DOB;
     private String addLine01;
     private String addLine02;
@@ -27,7 +30,4 @@ public class StaffDTO implements SuperDTO, StaffResponse {
     private String conNo;
     private String email;
     private String role;
-    private List<String> assignedFieldDetails;
-    private List<String> monitoringCropDetails;
-    private List<VehicleDTO> vehicles;
 }

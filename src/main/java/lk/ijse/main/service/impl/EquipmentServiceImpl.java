@@ -1,19 +1,23 @@
 package lk.ijse.main.service.impl;
 
-import jakarta.transaction.Transactional;
 import lk.ijse.main.customObj.EquipmentErrorResponse;
 import lk.ijse.main.customObj.EquipmentResponse;
+import lk.ijse.main.entity.Field;
+import lk.ijse.main.entity.Staff;
+import lk.ijse.main.exception.FieldNotFoundException;
 import lk.ijse.main.repository.EquipmentRepository;
 import lk.ijse.main.dto.EquipmentDTO;
 import lk.ijse.main.entity.Equipment;
 import lk.ijse.main.exception.DataPersistFailedException;
 import lk.ijse.main.exception.EquipmentNotFoundException;
+import lk.ijse.main.repository.FieldRepository;
+import lk.ijse.main.repository.StaffRepository;
 import lk.ijse.main.service.EquipmentService;
 import lk.ijse.main.util.Mapping;
 import lk.ijse.main.util.Util;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,6 +28,8 @@ import java.util.Optional;
 public class EquipmentServiceImpl implements EquipmentService {
 
     private final EquipmentRepository equipmentRepository;
+    private final FieldRepository fieldRepository;
+    private final StaffRepository staffRepository;
     private final Mapping mapping;
 
     @Override
@@ -46,16 +52,33 @@ public class EquipmentServiceImpl implements EquipmentService {
             tmpEquipmentEntity.get().setStatus(equipmentDTO.getStatus());
             tmpEquipmentEntity.get().setName(equipmentDTO.getName());
             tmpEquipmentEntity.get().setType(equipmentDTO.getType());
-
         }
+    }
+
+    @Override
+    public void updateEquipmentField(String equipmentCode, String fieldCode) {
+        Equipment equipment = equipmentRepository.findById(equipmentCode)
+                .orElseThrow(() -> new EquipmentNotFoundException("Equipment not Found"));
+        Field field = fieldRepository.findById(fieldCode)
+        .orElseThrow(() -> new EquipmentNotFoundException("Field not Found"));
+        equipment.setAssignedFieldDetails(field);
+    }
+
+    @Override
+    public void updateEquipmentStaff(String equipmentCode, String staffId) {
+        Equipment equipment = equipmentRepository.findById(equipmentCode)
+                .orElseThrow(() -> new EquipmentNotFoundException("Equipment not Found"));
+        Staff staff = staffRepository.findById(staffId)
+                .orElseThrow(() -> new EquipmentNotFoundException("Staff not Found"));
+        equipment.setAssignedStaffDetails(staff);
     }
 
     @Override
     public void deleteEquipment(String equipmentCode) {
         Optional<Equipment> findId = equipmentRepository.findById(equipmentCode);
-        if(findId.isPresent()){
+        if (!findId.isPresent()) {
             throw new EquipmentNotFoundException("Equipment not Found");
-        }else {
+        } else {
             equipmentRepository.deleteById(equipmentCode);
         }
     }
@@ -65,12 +88,20 @@ public class EquipmentServiceImpl implements EquipmentService {
         return mapping.convertToEquipmentDTO(equipmentRepository.findAll());
     }
 
+
     @Override
     public EquipmentResponse getSelectEquipment(String equipmentCode) {
-        if (equipmentRepository.existsById(equipmentCode)) {
-            return mapping.convertToEquipmentDTO(equipmentRepository.getReferenceById(equipmentCode));
-        } else {
-            return new EquipmentErrorResponse(0, "Note not found");
-        }
+        Equipment equipment = equipmentRepository.findById(equipmentCode)
+                .orElseThrow(() -> new EquipmentNotFoundException("Equipment not Found"));
+        System.out.println(equipment);
+        return mapping.convertToEquipmentDTO(equipment);
+    }
+
+    @Override
+    public List<EquipmentDTO> getFieldEquipments(String fieldCode) {
+        if (!fieldRepository.existsById(fieldCode)) throw new FieldNotFoundException("Field not found");
+        List<Equipment> equipments = equipmentRepository.findByFieldCode(fieldCode);
+        if (equipments.isEmpty()) throw new EquipmentNotFoundException("No in use Equipment found for the field");
+        return mapping.convertToEquipmentDTO(equipments);
     }
 }

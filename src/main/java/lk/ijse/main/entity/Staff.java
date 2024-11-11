@@ -39,12 +39,7 @@ public class Staff implements SuperEntity{
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    @ManyToMany
-    @JoinTable(
-            name = "field_staff",
-            joinColumns = @JoinColumn(name = "staff_id", referencedColumnName = "id"),
-            inverseJoinColumns = @JoinColumn(name = "field_id", referencedColumnName = "fieldCode")
-    )
+    @ManyToMany(mappedBy = "staffList")
     private List<Field> assignedFieldDetails = new ArrayList<>();
 
     @ManyToMany(mappedBy = "staff")

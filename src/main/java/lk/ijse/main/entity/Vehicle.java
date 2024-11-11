@@ -21,10 +21,11 @@ public class Vehicle {
     @Column(name = "fuel_type")
     private String fuelType;
     private String status;
-    private String Remarks;
+    private String remarks;
 
     @ManyToOne
     @JoinColumn(name = "staff_id",referencedColumnName = "id")
+
     private Staff staff;
 
 

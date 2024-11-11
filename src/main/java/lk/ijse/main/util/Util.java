@@ -27,7 +27,7 @@ public class Util {
         return UUID.randomUUID().toString();
     }
 
-    public static String createLogCode(){
+    public static String createMonitoryLogCode() {
         return UUID.randomUUID().toString();
     }
 

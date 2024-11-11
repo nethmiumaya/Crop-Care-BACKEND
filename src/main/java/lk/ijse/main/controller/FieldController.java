@@ -39,14 +39,15 @@ public class FieldController {
             fieldDTO.setFieldName(fieldName);
             fieldDTO.setFieldLocation(fieldLocation);
             fieldDTO.setExtentSize(extentSize);
-            fieldDTO.setFieldImage1(fieldImage1);
-            fieldDTO.setFieldImage2(fieldImage2);
-
+            fieldDTO.setFieldImage1(base64Image1);
+            fieldDTO.setFieldImage2(base64Image2);
             fieldService.saveField(fieldDTO);
             return new ResponseEntity<>(HttpStatus.CREATED);
         } catch (DataPersistFailedException e) {
+            e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
+            e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -60,6 +61,7 @@ public class FieldController {
             @RequestPart("fieldImage1") MultipartFile fieldImage1,
             @RequestPart("fieldImage2") MultipartFile fieldImage2) {
         try {
+            System.out.println("Field Code:  " + fieldCode);
             byte[] image1Bytes = fieldImage1.getBytes();
             byte[] image2Bytes = fieldImage2.getBytes();
             String base64Image1 = Util.toBase64ProfilePic(image1Bytes);
@@ -70,10 +72,25 @@ public class FieldController {
             fieldDTO.setFieldName(fieldName);
             fieldDTO.setFieldLocation(fieldLocation);
             fieldDTO.setExtentSize(extentSize);
-            fieldDTO.setFieldImage1(fieldImage1);
-            fieldDTO.setFieldImage2(fieldImage2);
+            fieldDTO.setFieldImage1(base64Image1);
+            fieldDTO.setFieldImage2(base64Image2);
 
             fieldService.updateField(fieldDTO);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (FieldNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PutMapping(value = "/{fieldCode}/staff", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Void> updateStaffField(@PathVariable("fieldCode") String fieldCode, @RequestBody List<String> staffIds) {
+        try {
+            if (staffIds == null || staffIds.isEmpty() || fieldCode == null) {
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            fieldService.updateStaffField(staffIds, fieldCode);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } catch (FieldNotFoundException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);

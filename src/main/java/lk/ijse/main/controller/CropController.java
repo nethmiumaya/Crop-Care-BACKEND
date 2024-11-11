@@ -82,6 +82,21 @@ public class CropController {
         }
     }
 
+@PutMapping
+public ResponseEntity<Void> updateCropField(@RequestParam("cropId") String cropId, @RequestParam("fieldId") String fieldId) {
+    try {
+        if (fieldId == null && cropId == null) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+        cropService.updateCropField(cropId, fieldId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    } catch (CropNotFoundException e) {
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    } catch (Exception e) {
+        return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+}
+
     @DeleteMapping(value = "/{cropId}")
     public ResponseEntity<Void> deleteCrop(@PathVariable("cropId") String cropId) {
         try {

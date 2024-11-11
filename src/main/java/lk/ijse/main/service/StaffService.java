@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface StaffService {
     void saveStaff(StaffDTO dto);
-    void updateStaff(StaffDTO dto);
+    void updateStaff(String id,StaffDTO dto);
     void deleteStaff(String id);
     List<StaffDTO> getAllStaff();
     StaffResponse getSelectStaff(String id);

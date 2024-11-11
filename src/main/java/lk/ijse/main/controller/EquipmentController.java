@@ -35,10 +35,42 @@ public class EquipmentController {
     @PutMapping(value = "/{equipmentCode}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateEquipment(@PathVariable("equipmentCode") String equipmentCode, @RequestBody EquipmentDTO equipmentDTO) {
         try {
+            System.out.println(equipmentDTO);
             if (equipmentDTO == null || equipmentCode == null || equipmentCode.isEmpty()) {
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
             equipmentService.updateEquipment(equipmentCode, equipmentDTO);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (EquipmentNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+
+    @PutMapping(value = "/updateField")
+    public ResponseEntity<Void> updateEquipmentField(@RequestParam("equipmentCode") String equipmentCode, @RequestParam("fieldCode") String fieldCode) {
+        try {
+            if (fieldCode == null || equipmentCode == null || equipmentCode.isEmpty()) {
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            equipmentService.updateEquipmentField(equipmentCode, fieldCode);
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } catch (EquipmentNotFoundException e) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @PutMapping(value = "/updateStaff")
+    public ResponseEntity<Void> updateEquipmentStaff(@RequestParam("equipmentCode") String equipmentCode, @RequestParam("staffId") String staffId) {
+        try {
+            if (staffId == null || equipmentCode == null || equipmentCode.isEmpty()) {
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            }
+            equipmentService.updateEquipmentStaff(equipmentCode, staffId);
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } catch (EquipmentNotFoundException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -59,7 +91,7 @@ public class EquipmentController {
         }
     }
 
-    @GetMapping(value = "/all", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/allequipments", produces = MediaType.APPLICATION_JSON_VALUE)
     public List<EquipmentDTO> findAll() {
         return equipmentService.getAllEquipment();
     }
@@ -67,5 +99,13 @@ public class EquipmentController {
     @GetMapping(value = "/{equipmentCode}", produces = MediaType.APPLICATION_JSON_VALUE)
     public EquipmentResponse getEquipment(@PathVariable("equipmentCode") String equipmentCode) {
         return equipmentService.getSelectEquipment(equipmentCode);
+    }
+
+    @GetMapping(value = "/field/{fieldCode}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<EquipmentDTO>> getInUseFieldEquipments(@PathVariable("fieldCode") String fieldCode) {
+       // log.info("Request to get in-use field equipments for fieldCode: {}", fieldCode);
+        List<EquipmentDTO> response = equipmentService.getFieldEquipments(fieldCode);
+        //log.info("In-use field equipments for fieldCode: {} retrieved successfully", fieldCode);
+        return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 }

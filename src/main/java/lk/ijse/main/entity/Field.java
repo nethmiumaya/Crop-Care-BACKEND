@@ -5,7 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.awt.*;
+import lombok.ToString;
+import org.apache.commons.lang3.builder.ToStringExclude;
+import org.springframework.data.geo.Point;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,16 +31,21 @@ public class Field implements SuperEntity{
     private String fieldImage2;
 
     @OneToMany(mappedBy = "field")
+    @ToString.Exclude
     private List<Crop> crops = new ArrayList<>();
 
-    @ManyToMany(mappedBy = "assignedFieldDetails")
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "field_staff",
+            joinColumns = @JoinColumn(name = "field_id"),
+            inverseJoinColumns = @JoinColumn(name = "staff_id")
+    )
+    @ToString.Exclude
     private List<Staff> staffList = new ArrayList<>();
-
     @OneToMany(mappedBy = "assignedFieldDetails")
+    @ToString.Exclude
     private List<Equipment> equipmentList = new ArrayList<>();
-
     @OneToMany(mappedBy = "field")
+    @ToString.Exclude
     private List<MonitoringLog> monitoringLogs = new ArrayList<>();
-
-
 }
