@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -21,6 +22,7 @@ public class VehicleController {
 
     private final VehicleService vehicleService;
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createVehicle(@RequestBody VehicleDTO vehicleDTO){
 
@@ -34,6 +36,7 @@ public class VehicleController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping(value = "/{vehicleCode}",consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateVehicle(@PathVariable("vehicleCode") String vehicleCode,@RequestBody VehicleDTO vehicleDTO){
         try {
@@ -51,6 +54,7 @@ public class VehicleController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping
     public ResponseEntity<Void> updateVehicleDriver(@RequestParam("vehicleCode") String vehicleCode,@RequestParam("driverId") String driverId){
         try {
@@ -66,6 +70,7 @@ public class VehicleController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @DeleteMapping(value = "/{vehicleCode}")
     public ResponseEntity<Void> deleteVehicle(@PathVariable("vehicleCode") String vehicleCode){
         try {

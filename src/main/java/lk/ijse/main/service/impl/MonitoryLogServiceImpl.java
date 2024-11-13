@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 import lk.ijse.main.customObj.MonitoryLogResponse;
 import lk.ijse.main.dto.MonitoryLogDTO;
 import lk.ijse.main.entity.MonitoringLog;
-import lk.ijse.main.exception.DataPersistFailedException;
 import lk.ijse.main.exception.MonitoryLogException;
 import lk.ijse.main.repository.MonitoryLogRepository;
 import lk.ijse.main.service.MonitoryLogService;
@@ -40,11 +39,11 @@ public class MonitoryLogServiceImpl implements MonitoryLogService {
         monitoryLogDTO.setLogCode(Util.createMonitoryLogCode());
         System.out.println("logCode: " + monitoryLogDTO.getLogCode());
         MonitoringLog monitoringLog = mapping.convertToMonitoryLogEntity(monitoryLogDTO);
-        System.out.println("nidimathai  "+ monitoringLog.getObservedImage());
+        System.out.println("monitoringLog.getObservedImage  "+ monitoringLog.getObservedImage());
         Field field = fieldRepository.findById(monitoryLogDTO.getFieldId())
                 .orElseThrow(() -> new FieldNotFoundException("Field not found"));
         monitoringLog.setField(field);
-        System.out.println("puus  "+ monitoringLog.getLogCode());
+        System.out.println("monitoringLog.getLogCode  "+ monitoringLog.getLogCode());
        monitoryLogRepository.save(monitoringLog);
     }
 

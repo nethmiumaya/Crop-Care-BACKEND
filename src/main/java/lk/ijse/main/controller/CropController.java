@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -20,9 +21,9 @@ import java.util.List;
 @RequestMapping("/api/v1/crop")
 @RequiredArgsConstructor
 public class CropController {
-    @Autowired
     private final CropService cropService;
 
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Void> createCrop(
             @RequestPart("commonName") String commonName,
@@ -50,7 +51,7 @@ public class CropController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{cropId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateCrop(
             @PathVariable("cropId") String cropId,
@@ -82,7 +83,8 @@ public class CropController {
         }
     }
 
-@PutMapping
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
+    @PutMapping
 public ResponseEntity<Void> updateCropField(@RequestParam("cropId") String cropId, @RequestParam("fieldId") String fieldId) {
     try {
         if (fieldId == null && cropId == null) {
@@ -97,6 +99,7 @@ public ResponseEntity<Void> updateCropField(@RequestParam("cropId") String cropI
     }
 }
 
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @DeleteMapping(value = "/{cropId}")
     public ResponseEntity<Void> deleteCrop(@PathVariable("cropId") String cropId) {
         try {

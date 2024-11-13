@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class StaffController {
 
     private final StaffService staffService;
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createStaff(@RequestBody StaffDTO staffDTO) {
         try {
@@ -33,7 +35,7 @@ public class StaffController {
         }
     }
 
-
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping(value = "/{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateStaff(@PathVariable("id") String id, @RequestBody StaffDTO staffDTO) {
         log.info("Starting updateStaff method with id: {} and staffDTO: {}", id, staffDTO);
@@ -58,6 +60,7 @@ public class StaffController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> deleteStaff(@PathVariable("id") String id) {
         try {

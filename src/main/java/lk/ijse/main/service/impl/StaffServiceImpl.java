@@ -32,7 +32,7 @@ public class StaffServiceImpl implements StaffService {
 
     @Override
     public void saveStaff(StaffDTO dto) {
-        System.out.println(dto.getGender() + "GAYANUKA");
+        System.out.println(dto.getGender() + "UMAYA");
         dto.setId(Util.createStaffId());
         Staff savedStaff = mapping.convertToStaffEntity(dto);
         savedStaff.setRole(Role.valueOf(dto.getRole()));

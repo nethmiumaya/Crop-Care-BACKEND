@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
@@ -34,6 +35,7 @@ public class MonitoryLogController {
      * @param fieldId the ID of the field
      * @return the ResponseEntity with status 201 (Created) or 400 (Bad Request) if the data is invalid
      */
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Void> createMonitoryLog(
             @RequestPart("logDate") String logDate,
@@ -71,6 +73,7 @@ public class MonitoryLogController {
      * @param fieldId the new ID of the field
      * @return the ResponseEntity with status 204 (No Content) or 404 (Not Found) if the log does not exist
      */
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{logCode}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Void> updateMonitoryLog(
             @PathVariable("logCode") String logCode,
@@ -106,6 +109,7 @@ public class MonitoryLogController {
      * @param staffIds the list of staff IDs to associate with the log
      * @return the ResponseEntity with status 204 (No Content) or 404 (Not Found) if the log does not exist
      */
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{logCode}/staff", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateMonitoryLogStaff(@PathVariable("logCode") String logCode, @RequestBody List<String> staffIds) {
         try {
@@ -127,6 +131,7 @@ public class MonitoryLogController {
      * @param crops the list of crop IDs to associate with the log
      * @return the ResponseEntity with status 204 (No Content) or 404 (Not Found) if the log does not exist
      */
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{logCode}/crops", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateMonitoryLogCrops(@PathVariable("logCode") String logCode, @RequestBody List<String> crops) {
         try {
@@ -147,7 +152,7 @@ public class MonitoryLogController {
      * @param logCode the code of the log to delete
      * @return the ResponseEntity with status 204 (No Content) or 404 (Not Found) if the log does not exist
      */
-
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @DeleteMapping(value = "/{logCode}")
     public ResponseEntity<Void> deleteMonitoryLog(@PathVariable("logCode") String logCode) {
         try {

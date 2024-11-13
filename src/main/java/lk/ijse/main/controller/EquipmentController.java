@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,6 +21,7 @@ public class EquipmentController {
 
     private final EquipmentService equipmentService;
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> createEquipment(@RequestBody EquipmentDTO equipmentDTO) {
         try {
@@ -32,6 +34,7 @@ public class EquipmentController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping(value = "/{equipmentCode}", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateEquipment(@PathVariable("equipmentCode") String equipmentCode, @RequestBody EquipmentDTO equipmentDTO) {
         try {
@@ -48,7 +51,7 @@ public class EquipmentController {
         }
     }
 
-
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping(value = "/updateField")
     public ResponseEntity<Void> updateEquipmentField(@RequestParam("equipmentCode") String equipmentCode, @RequestParam("fieldCode") String fieldCode) {
         try {
@@ -64,6 +67,7 @@ public class EquipmentController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @PutMapping(value = "/updateStaff")
     public ResponseEntity<Void> updateEquipmentStaff(@RequestParam("equipmentCode") String equipmentCode, @RequestParam("staffId") String staffId) {
         try {
@@ -79,6 +83,7 @@ public class EquipmentController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','ADMINISTRATIVE')")
     @DeleteMapping(value = "/{equipmentCode}")
     public ResponseEntity<Void> deleteEquipment(@PathVariable("equipmentCode") String equipmentCode) {
         try {
