@@ -1,16 +1,15 @@
-package lk.ijse.main.dto;
+package lk.ijse.main.jwtModels;
 
-import lk.ijse.main.customObj.UserResponse;
-import lk.ijse.main.entity.Role;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class UserDTO implements SuperDTO, UserResponse {
+@Builder
+public class SignIn {
     private String email;
     private String password;
-    private Role role;
 }

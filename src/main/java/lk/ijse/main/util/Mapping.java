@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class Mapping {
@@ -24,7 +25,15 @@ public class Mapping {
         return modelMapper.map(vehicles, new TypeToken<List<VehicleDTO>>() {}.getType()); //annonymous wage method ekk call karala tiyenawa meke note kiyala palaweni note entity eka gannawa epara eka dto widiyata convert karanawa anna e convert karanakota(type eka mkdda kiyala ahanawa)
     }
 
-
+    public UserDTO convertToUserDTO(User user) {
+        return modelMapper.map(user, UserDTO.class);
+    }
+    public User convertToUserEntity(UserDTO userDTO) {
+        return modelMapper.map(userDTO, User.class);
+    }
+    public List<UserDTO> convertToUserDTO(List<User> users) {
+        return modelMapper.map(users, new TypeToken<List<UserDTO>>() {}.getType());
+    }
 
     public EquipmentDTO convertToEquipmentDTO(Equipment equipment) {
         return modelMapper.map(equipment, EquipmentDTO.class);

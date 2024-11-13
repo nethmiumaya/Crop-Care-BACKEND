@@ -27,6 +27,9 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+	testImplementation 'org.springframework.security:spring-security-test'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt-api', version: '0.12.6'
 	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-impl', version: '0.12.6'
 	runtimeOnly group: 'io.jsonwebtoken', name: 'jjwt-jackson', version: '0.12.6'
@@ -35,8 +38,10 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-	implementation 'org.modelmapper:modelmapper:2.4.4'
+	implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.2.1'
 	implementation 'org.apache.commons:commons-lang3:3.12.0'
+	implementation 'org.slf4j:slf4j-api:2.0.13'
+	implementation 'ch.qos.logback:logback-classic:1.5.6'
 }
 
 tasks.named('test') {

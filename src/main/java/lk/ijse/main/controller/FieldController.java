@@ -10,6 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,6 +23,7 @@ public class FieldController {
 
     private final FieldService fieldService;
 
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Void> createField(
             @RequestPart("fieldName") String fieldName,
@@ -52,6 +54,7 @@ public class FieldController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{fieldCode}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<Void> updateField(
             @PathVariable("fieldCode") String fieldCode,
@@ -84,6 +87,7 @@ public class FieldController {
         }
     }
 
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @PutMapping(value = "/{fieldCode}/staff", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> updateStaffField(@PathVariable("fieldCode") String fieldCode, @RequestBody List<String> staffIds) {
         try {
@@ -98,7 +102,7 @@ public class FieldController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-
+    @PreAuthorize("hasAnyRole('MANAGER','SCIENTIST')")
     @DeleteMapping(value = "/{fieldCode}")
     public ResponseEntity<Void> deleteField(@PathVariable("fieldCode") String fieldCode) {
         try {
