@@ -1,4 +1,5 @@
 package lk.ijse.main.controller;
+import jakarta.validation.Valid;
 import lk.ijse.main.dto.UserDTO;
 import lk.ijse.main.exception.DataPersistFailedException;
 import lk.ijse.main.jwtModels.JWTAuthResponse;
@@ -11,7 +12,9 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
+/**
+ * REST controller for managing authentication operations.
+ */
 @RestController
 @RequestMapping("/api/v1/auth")
 @RequiredArgsConstructor
@@ -20,26 +23,48 @@ public class AuthController {
     private final AuthenticationService authenticationService;
     private final PasswordEncoder passwordEncoder;
 
+    /**
+     * POST /api/v1/auth/signUp : Register a new user.
+     *
+     * @param dto the user data transfer object
+     * @return the ResponseEntity with status 201 (Created) and the JWT authentication response, or 400 (Bad Request) if the data is invalid
+     */
     @PostMapping(value = "/signUp", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<JWTAuthResponse> signUp(@RequestBody UserDTO dto) {
+    public ResponseEntity<JWTAuthResponse> signUp(@Valid @RequestBody UserDTO dto) {
         try {
             log.info("Sign up controller");
             dto.setPassword(passwordEncoder.encode(dto.getPassword()));
             return ResponseEntity.status(HttpStatus.CREATED).body(authenticationService.signUp(dto));
         } catch (DataPersistFailedException e) {
+            log.error("Data persist failed during sign up");
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
+            log.error("Internal server error during sign up");
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 
+    /**
+     * POST /api/v1/auth/signIn : Authenticate a user.
+     *
+     * @param signIn the sign-in request containing user credentials
+     * @return the ResponseEntity with status 201 (Created) and the JWT authentication response
+     */
     @PostMapping(value = "/signIn")
-    public ResponseEntity<JWTAuthResponse> signIn(@RequestBody SignIn signIn) {
+    public ResponseEntity<JWTAuthResponse> signIn(@Valid @RequestBody SignIn signIn) {
         System.out.println("Sign in controller");
         return ResponseEntity.status(HttpStatus.CREATED).body(authenticationService.signIn(signIn));
     }
+
+    /**
+     * POST /api/v1/auth/refresh : Refresh the JWT token.
+     *
+     * @param refreshToken the refresh token
+     * @return the ResponseEntity with status 201 (Created) and the new JWT authentication response
+     */
     @PostMapping("/refresh")
     public ResponseEntity<JWTAuthResponse> refreshToken (@RequestParam ("refreshToken") String refreshToken) {
+        log.info("Refresh token controller");
         return ResponseEntity.status(HttpStatus.CREATED).body(authenticationService.refreshToken(refreshToken));
     }
 }
