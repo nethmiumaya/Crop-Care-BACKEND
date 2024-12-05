@@ -1,0 +1,16 @@
+2024-11-15 00:07:35.235 [http-nio-5050-exec-4] INFO  l.i.main.controller.UserController - User updated successfully with email: neth@gmail.com
+2024-11-15 00:07:46.376 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Field created successfully
+2024-11-15 00:10:40.277 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-11-15 00:13:11.041 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Updating crop with id: 264fdef6-3c4e-4245-a1bf-829fc64ade98
+2024-11-15 00:13:11.165 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Field updated successfully
+2024-11-15 00:16:02.363 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Deleting equipment with code: 570d1958-ff97-44fc-b665-9633a25a647e
+2024-11-15 00:16:02.378 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Equipment deleted successfully
+2024-11-15 00:17:45.749 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Updating equipment field with equipmentCode: 528af168-c8e4-44b4-bfe2-4b00ccf585ff and fieldCode: 264fdef6-3c4e-4245-a1bf-829fc64ade98
+2024-11-15 00:17:45.792 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Equipment field updated successfully
+2024-11-15 00:19:37.945 [http-nio-5050-exec-4] INFO  l.i.m.controller.EquipmentController - Updating equipment staff with equipmentCode: 528af168-c8e4-44b4-bfe2-4b00ccf585ff and staffId: 0e1e63e3-e948-4658-a1b1-fa3c6cdeb015
+2024-11-15 00:19:37.988 [http-nio-5050-exec-4] INFO  l.i.m.controller.EquipmentController - Equipment staff updated successfully
+2024-11-15 00:21:28.140 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Request to get in-use field equipments for fieldCode: 264fdef6-3c4e-4245-a1bf-829fc64ade98
+2024-11-15 00:21:28.185 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - In-use field equipments for fieldCode: 264fdef6-3c4e-4245-a1bf-829fc64ade98 retrieved successfully
+2024-11-15 00:23:21.450 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-15 00:23:21.453 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-15 00:23:21.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
