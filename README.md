@@ -43,7 +43,7 @@ The backend service for the Crop Care project, built using Java and Spring Boot.
 
 ## API Documentation
 
-For detailed API documentation, please visit our [Postman Documentation]([https://www.postman.com/your-documentation-url](https://documenter.getpostman.com/view/35386291/2sAYBbc85z)).
+For detailed API documentation, please visit our [Postman Documentation](https://documenter.getpostman.com/view/35386291/2sAYBbc85z).
 
 ## License
 
