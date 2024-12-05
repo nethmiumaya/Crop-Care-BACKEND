@@ -1,0 +1,41 @@
+2024-12-03 16:18:40.454 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 10768 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-03 16:18:40.457 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03 16:18:40.459 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-03 16:18:41.594 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 16:18:41.722 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 7 JPA repository interfaces.
+2024-12-03 16:18:42.526 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-03 16:18:42.544 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:18:42.544 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 16:18:42.624 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:18:42.624 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2105 ms
+2024-12-03 16:18:42.814 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 16:18:42.907 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-03 16:18:42.959 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-03 16:18:43.427 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 16:18:43.474 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 16:18:43.869 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62883f8a
+2024-12-03 16:18:43.872 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 16:18:43.930 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 16:18:43.939 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 16:18:45.512 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 16:18:45.865 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 16:18:46.337 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-03 16:18:46.408 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 16:18:46.867 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-03 16:18:47.084 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 16:18:47.919 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-03 16:18:47.929 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 8.092 seconds (process running for 9.062)
+2024-12-03 16:19:02.862 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:19:02.863 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 16:19:02.869 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2024-12-03 16:19:03.235 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 16:19:27.205 [http-nio-5050-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-12-03": expected format "yyyy/MM/dd"]
+2024-12-03 16:20:26.203 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Creating staff: StaffDTO(id=null, firstName=Hiruna, lastName=Kethsara, designation=Senior Technician, gender=MALE, joinDate=Wed Dec 04 05:30:00 IST 2024, DOB=Sun Feb 03 06:00:00 IST 2002, addLine01=N0:20, addLine02=Galle Road, addLine03=Habaraduwa, addLine04=Galle, addLine05=Southern Province, conNo=091-8666234, email=hiru@gmail.com, role=MANAGER)
+2024-12-03 16:25:51.092 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 16:26:17.063 [http-nio-5050-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-12-03": expected format "yyyy/MM/dd"]
+2024-12-03 16:28:25.080 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 16:28:50.394 [http-nio-5050-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2024-12-03": expected format "yyyy/MM/dd"]
+2024-12-03 16:34:01.992 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 16:35:55.502 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 16:35:55.527 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 16:35:55.572 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

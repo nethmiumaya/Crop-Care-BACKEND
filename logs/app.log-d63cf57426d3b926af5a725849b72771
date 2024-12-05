@@ -1,0 +1,37 @@
+2024-12-02 11:43:38.959 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 14728 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-02 11:43:38.962 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02 11:43:38.962 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-02 11:43:39.899 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-02 11:43:40.024 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 7 JPA repository interfaces.
+2024-12-02 11:43:40.722 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-02 11:43:40.736 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-02 11:43:40.736 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-02 11:43:40.816 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-02 11:43:40.817 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1797 ms
+2024-12-02 11:43:40.978 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-02 11:43:41.069 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-02 11:43:41.116 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-02 11:43:41.595 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-02 11:43:41.642 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-02 11:43:42.020 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1de85972
+2024-12-02 11:43:42.023 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-02 11:43:42.084 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-02 11:43:42.086 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-02 11:43:43.439 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-02 11:43:43.807 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02 11:43:44.264 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-02 11:43:44.328 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-02 11:43:44.731 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-02 11:43:44.936 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-02 11:43:45.660 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-02 11:43:45.675 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 7.226 seconds (process running for 8.252)
+2024-12-02 11:44:11.396 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-02 11:44:11.396 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-02 11:44:11.396 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-02 12:46:03.218 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m20s255ms381µs200ns).
+2024-12-02 15:35:07.582 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h18m3s906ms696µs299ns).
+2024-12-02 17:19:30.738 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m52s111ms510µs300ns).
+2024-12-02 17:51:09.708 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m8s560ms734µs300ns).
+2024-12-02 19:08:36.850 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-02 19:08:36.951 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-02 19:08:36.982 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

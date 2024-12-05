@@ -1,0 +1,37 @@
+2024-12-05 00:51:49.478 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 14264 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 00:51:49.481 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 00:51:49.482 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 00:51:50.449 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 00:51:50.558 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 100 ms. Found 7 JPA repository interfaces.
+2024-12-05 00:51:51.232 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 00:51:51.246 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 00:51:51.247 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 00:51:51.311 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 00:51:51.311 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1772 ms
+2024-12-05 00:51:51.458 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 00:51:51.546 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 00:51:51.588 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 00:51:51.965 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 00:51:52.000 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 00:51:52.367 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f6a8efe
+2024-12-05 00:51:52.370 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 00:51:52.426 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 00:51:52.427 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 00:51:53.736 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 00:51:54.076 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 00:51:54.473 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 00:51:54.537 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 00:51:54.940 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 00:51:55.113 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 00:51:55.977 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 00:51:55.987 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 7.051 seconds (process running for 8.034)
+2024-12-05 00:52:24.557 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 00:52:24.558 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 00:52:24.561 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-05 00:52:25.066 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 00:52:25.144 [http-nio-5050-exec-1] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 00:52:34.650 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 00:52:34.680 [http-nio-5050-exec-2] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 00:53:16.152 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 00:53:16.154 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 00:53:16.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

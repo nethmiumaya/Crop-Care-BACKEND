@@ -1,0 +1,163 @@
+2024-12-04 07:59:25.946 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 5816 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-04 07:59:25.949 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04 07:59:25.950 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-04 07:59:27.713 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-04 07:59:27.915 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 184 ms. Found 7 JPA repository interfaces.
+2024-12-04 07:59:29.306 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-04 07:59:29.463 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-04 07:59:29.464 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-04 07:59:29.770 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-04 07:59:29.771 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3719 ms
+2024-12-04 07:59:30.156 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-04 07:59:30.354 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-04 07:59:30.468 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-04 07:59:31.109 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-04 07:59:31.164 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-04 07:59:31.754 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e4f2300
+2024-12-04 07:59:31.759 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-04 07:59:31.884 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-04 07:59:31.887 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-04 07:59:34.468 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-04 07:59:35.319 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 07:59:35.934 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-04 07:59:36.059 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-04 07:59:36.871 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-04 07:59:37.179 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-04 07:59:38.348 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-04 07:59:38.363 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 13.389 seconds (process running for 14.771)
+2024-12-04 07:59:53.253 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-04 07:59:53.255 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-04 07:59:53.259 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-12-04 07:59:53.968 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 07:59:58.230 [http-nio-5050-exec-3] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 07:59:58.250 [http-nio-5050-exec-3] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:11:49.606 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:11:53.381 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:11:53.385 [http-nio-5050-exec-6] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:12:11.418 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:12:15.510 [http-nio-5050-exec-9] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:12:15.519 [http-nio-5050-exec-9] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:13:52.254 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:13:55.853 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:13:55.858 [http-nio-5050-exec-4] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:15:35.228 [http-nio-5050-exec-2] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:15:38.316 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:15:38.321 [http-nio-5050-exec-5] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:16:01.051 [http-nio-5050-exec-7] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:16:04.576 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:16:04.583 [http-nio-5050-exec-8] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:19:35.755 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:19:39.813 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:19:39.819 [http-nio-5050-exec-4] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:22:58.119 [http-nio-5050-exec-2] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:23:05.748 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Deleting crop with id: undefined
+2024-12-04 08:23:05.756 [http-nio-5050-exec-6] ERROR l.i.main.controller.CropController - Crop can't found
+2024-12-04 08:25:36.744 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:25:40.034 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Deleting crop with id: dab9f2e6-913f-4cd0-85e7-cc548158d1f0
+2024-12-04 08:25:40.230 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Crop deleted successfully
+2024-12-04 08:25:42.213 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:29:00.729 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 08:29:03.289 [http-nio-5050-exec-7] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:39:13.911 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 08:39:17.504 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Vehicle deleted successfully
+2024-12-04 08:39:19.862 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 08:41:11.224 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 08:41:14.854 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Deleting equipment with code: 61f66cd1-7a4b-475d-8d3a-7d4992a0504e
+2024-12-04 08:41:14.899 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Equipment deleted successfully
+2024-12-04 08:41:16.424 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 08:41:21.192 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 08:41:25.608 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Deleting field with code: undefined
+2024-12-04 08:41:25.611 [http-nio-5050-exec-2] ERROR l.i.main.controller.FieldController - Field can't found 
+2024-12-04 08:42:24.309 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 08:42:28.519 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Deleting field with code: 924bd014-b4ab-4829-9ee2-a500bcc1fec7
+2024-12-04 08:42:28.589 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Field deleted successfully
+2024-12-04 08:42:30.303 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 08:42:35.004 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 08:42:36.071 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 08:42:36.967 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-04 08:42:40.324 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Deleting monitoryLog with code: undefined
+2024-12-04 08:42:40.328 [http-nio-5050-exec-6] ERROR l.i.m.c.MonitoryLogController - MonitoryLog can't found
+2024-12-04 08:43:38.412 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-04 08:43:52.780 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-04 08:44:34.403 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Deleting monitoryLog with code: b7419ee1-95b9-4eaf-a541-27d5c033f747
+2024-12-04 08:44:34.442 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - MonitoryLog deleted successfully
+2024-12-04 08:44:36.044 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-04 08:44:39.430 [http-nio-5050-exec-6] INFO  l.i.main.controller.UserController - All users fetched successfully
+2024-12-04 08:44:43.413 [http-nio-5050-exec-8] ERROR l.i.main.controller.UserController - User not found with email: undefined
+2024-12-04 08:45:48.221 [http-nio-5050-exec-10] INFO  l.i.main.controller.UserController - All users fetched successfully
+2024-12-04 08:45:54.161 [http-nio-5050-exec-1] ERROR l.i.main.controller.UserController - User not found with email: undefined
+2024-12-04 08:46:10.288 [http-nio-5050-exec-3] INFO  l.i.main.controller.UserController - All users fetched successfully
+2024-12-04 08:46:13.868 [http-nio-5050-exec-5] INFO  l.i.main.controller.UserController - User deleted successfully with email: umayagk@gmail.com
+2024-12-04 08:46:15.402 [http-nio-5050-exec-7] INFO  l.i.main.controller.UserController - All users fetched successfully
+2024-12-04 08:46:26.637 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-04 08:46:27.855 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 08:46:29.156 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 08:46:30.520 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 08:46:32.126 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 08:46:33.084 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 08:46:36.887 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 08:49:07.772 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 08:49:10.075 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: 345678
+2024-12-04 08:49:50.222 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 08:49:50.262 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: undefined and staffDTO: StaffDTO(id=null, firstName=Nethmi, lastName=Umaya, designation=Technical Manager, gender=null, joinDate=Sun Nov 30 05:30:00 IST 2, DOB=Sun Nov 30 05:30:00 IST 2, addLine01=No: 01, conNo=0773456872, email=umayagk@gmail.com, role=MANAGER)
+2024-12-04 08:49:50.272 [http-nio-5050-exec-3] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-04 08:49:50.272 [http-nio-5050-exec-3] ERROR l.i.m.service.impl.StaffServiceImpl - StaffNotFoundException: Staff not found
+2024-12-04 08:49:50.272 [http-nio-5050-exec-3] ERROR l.i.main.controller.StaffController - Staff not found: 
+2024-12-04 09:23:10.405 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Deleting staff with id: f2ba1951-44bd-4309-924e-3a4ca462f2b1
+2024-12-04 09:23:12.556 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 09:31:03.259 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 09:31:06.775 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:31:42.696 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:32:25.239 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:34:45.954 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 09:35:47.618 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Creating staff: StaffDTO(id=null, firstName=Nirosha, lastName=Chandi, designation=MANAGER, gender=female, joinDate=Wed Dec 04 05:30:00 IST 2024, DOB=Wed Dec 04 05:30:00 IST 2024, addLine01=Colombo, conNo=0774497272, email=nirosha@gmail.com, role=MANAGER)
+2024-12-04 09:35:47.742 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 09:35:52.104 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-04 09:35:52.917 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-04 09:36:30.207 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:36:32.682 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-04 09:36:34.701 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:40:18.193 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:41:14.617 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:41:46.682 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 09:44:17.404 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 10:03:20.344 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:03:47.751 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=AOC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:03:47.841 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:03:47.929 [http-nio-5050-exec-5] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:07:58.127 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:08:22.542 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABD-7272, vehicleCategory=Van, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:08:22.545 [http-nio-5050-exec-9] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:10:01.110 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:10:19.627 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7273, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:10:19.639 [http-nio-5050-exec-4] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:10:19.742 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:11:41.931 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:11:56.172 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:11:56.183 [http-nio-5050-exec-7] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:11:56.281 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:21:22.416 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:21:41.382 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Car, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:21:41.399 [http-nio-5050-exec-10] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:21:41.494 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:25:45.307 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:26:01.336 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:26:01.353 [http-nio-5050-exec-3] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:26:01.434 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:27:41.360 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:27:57.524 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:27:57.546 [http-nio-5050-exec-8] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:27:57.612 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:29:49.717 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:31:07.909 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 10:38:22.354 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-04 10:39:33.393 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:39:46.650 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:39:46.673 [http-nio-5050-exec-2] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:39:46.705 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:40:36.070 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Creating vehicle: VehicleDTO(vehicleCode=null, licensePlateNo=ABC-7272, vehicleCategory=Bike, fuelType=Petral, status=Available, remarks=Remark01, staffId=)
+2024-12-04 10:40:36.077 [http-nio-5050-exec-7] ERROR l.i.m.controller.VehicleController - Internal server error during vehicle creation
+2024-12-04 10:40:36.194 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-04 10:53:48.073 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-04 10:53:48.120 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-04 10:53:48.151 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

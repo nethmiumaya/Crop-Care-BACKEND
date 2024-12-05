@@ -1,0 +1,29 @@
+2024-12-05 00:01:20.297 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 00:01:20.297 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:01:22.939 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 00:01:38.578 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 00:05:54.212 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:05:54.212 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 00:05:56.349 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 00:06:12.905 [http-nio-5050-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 00:12:13.067 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 00:12:13.068 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:12:14.890 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 00:12:30.055 [http-nio-5050-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 00:16:56.495 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:16:56.510 [http-nio-5050-exec-3] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:16:59.652 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:17:02.257 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:17:57.836 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:17:57.837 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:18:00.211 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:19:21.663 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:19:21.665 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:19:24.108 [http-nio-5050-exec-7] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:20:54.831 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:20:54.832 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:21:00.282 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:21:19.111 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 00:23:37.124 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 00:23:37.141 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 00:23:37.163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,186 @@
+2024-12-05 19:22:53.131 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 688 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 19:22:53.135 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 19:22:53.136 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 19:22:54.137 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 19:22:54.253 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 7 JPA repository interfaces.
+2024-12-05 19:22:54.895 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 19:22:54.908 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 19:22:54.909 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 19:22:54.972 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 19:22:54.973 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1786 ms
+2024-12-05 19:22:55.132 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 19:22:55.241 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 19:22:55.291 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 19:22:55.693 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 19:22:55.731 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 19:22:56.085 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e8f0f98
+2024-12-05 19:22:56.088 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 19:22:56.145 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 19:22:56.146 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 19:22:57.468 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 19:22:57.799 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 19:22:58.231 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 19:22:58.298 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 19:22:58.704 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 19:22:58.885 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 19:22:59.603 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 19:22:59.611 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 7.205 seconds (process running for 8.089)
+2024-12-05 19:24:48.398 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 19:24:48.398 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 19:24:48.400 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-05 19:24:48.810 [http-nio-5050-exec-2] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 19:24:48.810 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:24:50.378 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 19:24:52.233 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:24:52.233 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 19:25:13.479 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:25:13.480 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 19:25:52.476 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:25:52.476 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 19:26:42.160 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:26:42.165 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 19:26:48.054 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 19:27:01.046 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - monitoryLog updated successfully
+2024-12-05 19:27:06.166 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 19:27:06.166 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:31:37.357 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:36:39.422 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:36:42.399 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 19:36:58.070 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 19:36:58.198 [http-nio-5050-exec-10] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 19:43:59.280 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 19:43:59.280 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:44:01.515 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 19:44:03.947 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 19:44:05.039 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:44:23.433 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 19:45:01.881 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Updating crop with id: d80ae373-06c9-48db-a456-c473f1e6f053
+2024-12-05 19:45:01.940 [http-nio-5050-exec-3] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 19:48:43.935 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 19:48:46.476 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 19:49:09.694 [http-nio-5050-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldImage1' is not present.]
+2024-12-05 20:00:43.581 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:00:49.201 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 20:01:01.603 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 20:01:01.680 [http-nio-5050-exec-2] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 20:06:03.037 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:06:05.401 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 20:06:29.036 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 20:06:29.084 [http-nio-5050-exec-5] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 20:07:09.881 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:07:09.882 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 20:07:12.911 [http-nio-5050-exec-9] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 20:07:29.515 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Updating crop with id: 71dab343-77eb-481a-8003-cdc78880fe3f
+2024-12-05 20:07:29.717 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Crop updated successfully
+2024-12-05 20:07:29.776 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Updating crop field with cropId: 71dab343-77eb-481a-8003-cdc78880fe3f and fieldId: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 20:07:29.878 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Crop field updated successfully
+2024-12-05 20:07:31.729 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:07:31.729 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 20:14:09.372 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:14:13.010 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:16:19.406 [http-nio-5050-exec-4] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:16:21.811 [http-nio-5050-exec-6] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:19:52.360 [http-nio-5050-exec-10] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:19:55.133 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:20:53.610 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:21:00.148 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:21:02.773 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:27:51.023 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:27:51.024 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:27:53.732 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 20:28:04.160 [http-nio-5050-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 20:28:12.092 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - monitoryLog updated successfully
+2024-12-05 20:28:21.203 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:28:21.211 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:29:20.496 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:29:24.527 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:29:24.527 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:29:27.117 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 20:29:39.106 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - monitoryLog updated successfully
+2024-12-05 20:29:43.091 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:29:43.093 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:30:32.886 [http-nio-5050-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 20:31:41.113 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:31:41.113 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:31:41.195 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:31:59.778 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - MonitoryLog created successfully
+2024-12-05 20:32:01.839 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:32:01.841 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:32:01.908 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:32:05.787 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:32:12.671 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:32:12.687 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 20:32:15.146 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:32:18.047 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:36:19.359 [http-nio-5050-exec-6] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:36:21.506 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:38:25.767 [http-nio-5050-exec-4] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:38:28.536 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:40:52.413 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:40:54.612 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:41:01.768 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Updating equipment staff with equipmentCode: 8e9f6a27-1589-4f0a-a9df-a23b99a84439 and staffId: 
+2024-12-05 20:41:01.799 [http-nio-5050-exec-2] ERROR l.i.m.controller.EquipmentController - Equipment not found
+2024-12-05 20:41:02.002 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Updating equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:41:02.015 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Equipment updated successfully
+2024-12-05 20:44:17.817 [http-nio-5050-exec-8] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:44:19.601 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:51:02.830 [http-nio-5050-exec-10] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:51:04.667 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:51:04.699 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 20:51:04.719 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:51:06.435 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:51:06.451 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:51:06.547 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:51:08.546 [http-nio-5050-exec-2] INFO  l.i.main.controller.UserController - All users fetched successfully
+2024-12-05 20:51:11.120 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:51:11.120 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:51:11.178 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:45.219 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:52:45.220 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:45.292 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:46.111 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:52:46.122 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:46.165 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:47.929 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 20:52:47.943 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:52:48.055 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:52:49.540 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:52:49.540 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:49.597 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:52:54.862 [http-nio-5050-exec-3] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:53:06.848 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:54:24.892 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:54:28.040 [http-nio-5050-exec-6] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 20:54:34.110 [http-nio-5050-exec-10] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:54:35.989 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Updating equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:54:36.004 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Equipment updated successfully
+2024-12-05 20:54:36.079 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:54:40.506 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:54:46.589 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Updating equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 20:54:46.688 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Equipment updated successfully
+2024-12-05 20:54:46.711 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 20:55:05.517 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:55:05.517 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 20:55:05.535 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 20:55:24.305 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:55:24.305 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 20:55:24.365 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 20:55:27.161 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 21:07:35.580 [http-nio-5050-exec-4] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 21:07:38.657 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0
+2024-12-05 21:08:00.324 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 21:08:00.618 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Creating equipment: EquipmentDTO(equipmentCode=null, name=equipment 01, type=boy, status=available)
+2024-12-05 21:08:00.665 [http-nio-5050-exec-7] INFO  l.i.m.controller.EquipmentController - Equipment created successfully
+2024-12-05 21:08:04.105 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:08:04.106 [http-nio-5050-exec-3] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 21:08:05.160 [http-nio-5050-exec-10] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 21:08:12.372 [http-nio-5050-exec-1] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: 8e9f6a27-1589-4f0a-a9df-a23b99a84439
+2024-12-05 21:26:44.326 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m46s270ms691µs700ns).
+2024-12-05 21:27:32.251 [http-nio-5050-exec-2] INFO  l.i.m.controller.EquipmentController - Fetching equipment with code: dc92860f-5257-4154-8dbd-40873d53a417
+2024-12-05 21:27:37.769 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:27:37.773 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:27:37.815 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:27:40.573 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching vehicle with code: 5bdf3aab-b872-4325-8ba3-c9f71a2cbf2b
+2024-12-05 21:33:34.153 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 21:33:34.216 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 21:33:34.249 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

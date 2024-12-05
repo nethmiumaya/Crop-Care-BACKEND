@@ -1,0 +1,65 @@
+2024-12-05 00:23:56.988 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 16488 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 00:23:56.991 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 00:23:56.993 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 00:23:58.136 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 00:23:58.252 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 107 ms. Found 7 JPA repository interfaces.
+2024-12-05 00:23:58.980 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 00:23:58.996 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 00:23:58.996 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 00:23:59.066 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 00:23:59.066 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1996 ms
+2024-12-05 00:23:59.248 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 00:23:59.342 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 00:23:59.390 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 00:23:59.800 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 00:23:59.836 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 00:24:00.191 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cb4c4cc
+2024-12-05 00:24:00.201 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 00:24:00.278 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 00:24:00.281 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 00:24:01.560 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 00:24:02.016 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 00:24:02.439 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 00:24:02.497 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 00:24:02.901 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 00:24:03.073 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 00:24:03.859 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 00:24:03.868 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 7.478 seconds (process running for 8.589)
+2024-12-05 00:24:16.911 [http-nio-5050-exec-2] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 00:24:16.911 [http-nio-5050-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 00:24:16.913 [http-nio-5050-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-05 00:24:17.326 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:24:17.326 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:24:19.737 [http-nio-5050-exec-3] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:24:40.145 [http-nio-5050-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 00:29:25.993 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:29:25.993 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:29:27.968 [http-nio-5050-exec-2] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:29:49.808 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Updating crop with id: 71dab343-77eb-481a-8003-cdc78880fe3f
+2024-12-05 00:29:49.952 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Crop updated successfully
+2024-12-05 00:29:55.707 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:29:55.708 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:31:05.893 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:31:05.893 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:31:08.842 [http-nio-5050-exec-3] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 00:31:35.557 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Updating crop with id: c0b19a28-761d-4540-9d60-bbb5d341a784
+2024-12-05 00:31:35.661 [http-nio-5050-exec-5] INFO  l.i.main.controller.CropController - Crop updated successfully
+2024-12-05 00:31:43.927 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:31:43.927 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 00:34:25.706 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:34:25.713 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 00:34:28.013 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 00:34:47.648 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 00:38:02.411 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:43:39.152 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s63ms181µs600ns).
+2024-12-05 00:46:15.155 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:46:17.881 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 00:46:34.746 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 00:46:34.794 [http-nio-5050-exec-6] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 00:47:02.762 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Updating crop with id: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 00:47:02.792 [http-nio-5050-exec-8] ERROR l.i.main.controller.FieldController - Internal server error during field update
+2024-12-05 00:47:57.990 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 00:50:14.216 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching all fields
+2024-12-05 00:51:41.535 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 00:51:41.562 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 00:51:41.609 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

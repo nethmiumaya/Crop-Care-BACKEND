@@ -1,0 +1,644 @@
+2024-12-05 08:02:31.404 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 2192 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 08:02:31.408 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 08:02:31.410 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 08:02:33.124 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 08:02:33.300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158 ms. Found 7 JPA repository interfaces.
+2024-12-05 08:02:34.423 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 08:02:34.447 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 08:02:34.448 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 08:02:34.566 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 08:02:34.567 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3037 ms
+2024-12-05 08:02:34.847 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 08:02:34.996 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 08:02:35.085 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 08:02:35.712 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 08:02:35.774 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 08:02:36.337 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4491eaeb
+2024-12-05 08:02:36.343 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 08:02:36.457 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 08:02:36.459 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 08:02:38.796 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 08:02:39.360 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 08:02:40.060 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 08:02:40.192 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 08:02:40.900 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 08:02:41.231 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 08:02:42.493 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 08:02:42.508 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 12.206 seconds (process running for 13.678)
+2024-12-05 08:03:41.553 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 08:03:41.553 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 08:03:41.555 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-05 08:03:42.474 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:03:42.474 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 08:03:43.504 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:03:43.513 [http-nio-5050-exec-9] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 08:03:48.837 [http-nio-5050-exec-10] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 08:03:50.561 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:03:50.565 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:04:13.923 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 08:04:42.126 [http-nio-5050-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 08:10:00.152 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:10:00.152 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:11:49.574 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:11:49.574 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:11:51.240 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:11:51.246 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:11:59.081 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:11:59.095 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:05.710 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:05.710 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:09.850 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:09.855 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:18.782 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:18.790 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:32.018 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:32.018 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:34.370 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:34.370 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:37.317 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:12:37.394 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:38.216 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 08:12:38.220 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 08:13:01.579 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:13:16.447 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:13:39.499 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: 4f8325c8-93c2-467b-abea-9b2f629c0518 and staffDTO: StaffDTO(id=null, firstName=Amal, lastName=Kariyawasam, designation=MANAGER, gender=male, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Haputhale, conNo=0776542342, email=amal@gmail.com, role=MANAGER)
+2024-12-05 08:13:39.519 [http-nio-5050-exec-2] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:13:39.530 [http-nio-5050-exec-2] ERROR l.i.main.controller.StaffController - Error updating staff: 
+2024-12-05 08:13:39.606 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:20.680 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:22.511 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:24.538 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:27.162 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:30.576 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:33.703 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:16:49.034 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:17:04.167 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:17:30.550 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:17:32.548 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:18:27.512 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:18:36.050 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:18:39.377 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:19:10.690 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: 4f8325c8-93c2-467b-abea-9b2f629c0518 and staffDTO: StaffDTO(id=null, firstName=Amal, lastName=Danthanarayana, designation=MANAGER, gender=male, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Galle, conNo=0776542341, email=amal@gmail.com, role=MANAGER)
+2024-12-05 08:19:10.690 [http-nio-5050-exec-1] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:19:10.698 [http-nio-5050-exec-1] ERROR l.i.main.controller.StaffController - Error updating staff: 
+2024-12-05 08:19:10.927 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:22:40.398 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=MALE, joinDate=Thu Nov 14 05:30:00 IST 2024, DOB=Thu Dec 04 05:30:00 IST 2008, addLine01=N0:01, conNo=0773812357, email=tharu@gmail.com, role=SCIENTIST)
+2024-12-05 08:22:40.398 [http-nio-5050-exec-4] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:22:40.787 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:23:36.404 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:23:41.480 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:23:44.828 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:23:53.877 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:23:57.899 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:24:04.358 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:24:23.971 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:24:43.550 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=female, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=N0:01, conNo=0773812357, email=SACHI@gmail.com, role=SCIENTIST)
+2024-12-05 08:24:43.552 [http-nio-5050-exec-2] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:24:43.558 [http-nio-5050-exec-2] ERROR l.i.main.controller.StaffController - Error updating staff: 
+2024-12-05 08:24:43.823 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:26:30.428 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:26:43.420 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:26:55.002 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:27:09.537 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:27:28.129 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:27:31.960 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:30:04.827 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:30:34.494 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=male, joinDate=Sun Nov 30 05:30:00 IST 2, DOB=Sun Nov 30 05:30:00 IST 2, addLine01=N0:01, conNo=0773812357, email=tharu@gmail.com, role=MANAGER)
+2024-12-05 08:30:34.497 [http-nio-5050-exec-7] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:30:34.514 [http-nio-5050-exec-7] ERROR l.i.main.controller.StaffController - Error updating staff: 
+2024-12-05 08:30:34.571 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:34:37.813 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:35:23.642 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:28.413 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:31.985 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:40.527 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:48.185 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:49.746 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:53.557 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:57.978 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:35:59.443 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:36:06.518 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:36:18.150 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:36:18.658 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:36:48.337 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:37:03.528 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:37:14.566 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:37:32.098 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=MALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=N0:01, conNo=0773812357, email=sachi@gmail.com, role=SCIENTIST)
+2024-12-05 08:37:32.107 [http-nio-5050-exec-8] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:37:32.187 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:37:32.273 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:37:51.521 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:38:01.902 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:38:21.584 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=MALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Matara, conNo=0773812357, email=sachi@gmail.com, role=SCIENTIST)
+2024-12-05 08:38:21.584 [http-nio-5050-exec-2] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:38:21.624 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:38:21.931 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:38:42.244 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 08:38:42.395 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 08:38:57.892 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6 and staffDTO: StaffDTO(id=null, firstName=Amanda , lastName=Sathsara, designation=Senior Technician, gender=FEMALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=N0:20, conNo=091-8666234, email=ama@gmail.com, role=MANAGER)
+2024-12-05 08:38:57.895 [http-nio-5050-exec-8] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:38:57.920 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:38:58.261 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:39:22.894 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:39:41.705 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=MALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Matara, conNo=0773812357, email=sachi@gmail.com, role=MANAGER)
+2024-12-05 08:39:41.709 [http-nio-5050-exec-3] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:39:41.742 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:39:41.954 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:42:27.147 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:42:46.845 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:43:52.559 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=MALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Matara, conNo=0773812357, email=sachi@gmail.com, role=MANAGER)
+2024-12-05 08:43:52.560 [http-nio-5050-exec-8] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:43:52.567 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:43:52.760 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:44:10.666 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:44:40.388 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: 4f8325c8-93c2-467b-abea-9b2f629c0518 and staffDTO: StaffDTO(id=null, firstName=Amal, lastName=Charaka, designation=MANAGER, gender=MALE, joinDate=Sat Dec 07 05:30:00 IST 2024, DOB=Sat Dec 07 05:30:00 IST 2024, addLine01=Galle, conNo=0776542341, email=amal@gmail.com, role=MANAGER)
+2024-12-05 08:44:40.392 [http-nio-5050-exec-9] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:44:40.414 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:44:40.753 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:45:41.582 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:45:53.126 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 08:46:13.132 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: d76e61d5-47be-4116-a6b1-5b1465a6af78 and staffDTO: StaffDTO(id=null, firstName=Sachini, lastName=Omaya, designation=Agronomist, gender=FEMALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Matara, conNo=0773812357, email=sachi@gmail.com, role=MANAGER)
+2024-12-05 08:46:13.132 [http-nio-5050-exec-3] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:46:13.150 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:46:13.342 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:46:27.530 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:47:47.737 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: 4f8325c8-93c2-467b-abea-9b2f629c0518 and staffDTO: StaffDTO(id=null, firstName=Amal, lastName=Charaka, designation=MANAGER, gender=MALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Colombo, conNo=0776542341, email=amal@gmail.com, role=MANAGER)
+2024-12-05 08:47:47.741 [http-nio-5050-exec-7] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:47:47.778 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:47:47.968 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:47:51.878 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 08:47:55.893 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 08:48:00.618 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 08:48:15.745 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Starting updateStaff method with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6 and staffDTO: StaffDTO(id=null, firstName=Amanda , lastName=Sathsara, designation=Senior Technician, gender=FEMALE, joinDate=Thu Dec 05 05:30:00 IST 2024, DOB=Thu Dec 05 05:30:00 IST 2024, addLine01=Kalutara, conNo=091-8666234, email=ama@gmail.com, role=MANAGER)
+2024-12-05 08:48:15.747 [http-nio-5050-exec-1] INFO  l.i.m.service.impl.StaffServiceImpl - Starting updateStaff method
+2024-12-05 08:48:15.781 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Staff updated successfully
+2024-12-05 08:48:15.932 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:48:19.196 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 08:56:25.423 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:56:30.304 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:56:32.772 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:56:34.210 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:56:35.006 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:56:57.068 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:24.089 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:27.077 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:33.704 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:36.567 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:45.058 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:46.621 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:58:58.268 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:59:16.842 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:59:31.875 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 08:59:33.042 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:00:09.001 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:00:12.587 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:00:47.529 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:01:14.824 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:01:17.045 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:02:23.640 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:02:23.640 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:02:26.936 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:03:47.589 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:03:47.589 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:03:47.776 [http-nio-5050-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to write: java.io.IOException: An established connection was aborted by the software in your host machine]
+2024-12-05 09:03:47.776 [http-nio-5050-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to write: java.io.IOException: An established connection was aborted by the software in your host machine]
+2024-12-05 09:03:47.945 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:03:47.945 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:03:54.246 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:05:36.780 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:05:36.781 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:05:40.021 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:05:40.026 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:05:40.802 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:05:40.802 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:06:37.597 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:06:37.597 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:06:52.591 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:06:52.591 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:11.950 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:11.950 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:18.906 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:18.906 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:21.808 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:21.808 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:28.874 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:28.878 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:31.588 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:31.588 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:34.817 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:34.821 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:46.310 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:46.310 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:47.375 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:47.375 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:52.840 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:52.840 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:07:57.945 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:07:57.945 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:08:01.338 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:08:16.882 [http-nio-5050-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 09:16:03.736 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:16:27.040 [http-nio-5050-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 09:17:11.414 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:17:11.421 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:17:23.812 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:17:23.814 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:17:30.404 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:17:30.404 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:17:34.192 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:17:34.200 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:17:35.603 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:17:35.604 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:17:39.476 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:17:53.051 [http-nio-5050-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 09:18:41.214 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:18:41.214 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:18:45.810 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:18:45.810 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:18:48.201 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:18:48.201 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:21:36.300 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:21:36.300 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:21:40.148 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:21:40.148 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:21:54.645 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:21:54.647 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:24:23.538 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:24:23.538 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:24:28.025 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:24:28.025 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:24:32.864 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:24:32.866 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:24:33.668 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:24:33.668 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:25:11.194 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:25:11.196 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:25:31.301 [http-nio-5050-exec-5] INFO  l.i.m.controller.EquipmentController - Fetching all equipment
+2024-12-05 09:25:53.833 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:25:53.833 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:25:56.473 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:25:56.473 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:27:04.759 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:27:04.759 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:27:33.680 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:27:33.733 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 09:28:30.661 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:28:30.661 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:28:31.818 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:28:31.818 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:28:35.884 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:29:40.434 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:29:40.456 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:29:48.048 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:30:42.614 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:30:42.615 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:31:00.783 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:31:26.407 [http-nio-5050-exec-10] ERROR l.i.m.c.MonitoryLogController - Internal server error during monitoryLog update
+2024-12-05 09:34:31.549 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:34:31.551 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:34:32.602 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:34:32.602 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:34:48.256 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:34:48.256 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:34:58.884 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:34:58.884 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:34:59.951 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:34:59.951 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:35:13.871 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:35:13.885 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:35:23.662 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:35:23.666 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:35:34.647 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:35:34.653 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:35:44.517 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 09:35:44.517 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 09:35:45.368 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:35:45.369 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:36:01.932 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:38:43.643 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:38:43.643 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:38:50.924 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:38:50.929 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:38:53.921 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:39:05.835 [http-nio-5050-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 09:40:00.148 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:40:00.151 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:41:07.840 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:41:07.840 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:41:11.107 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:41:11.114 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:41:22.216 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:41:22.234 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:41:31.706 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:41:31.710 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:41:34.733 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:41:45.961 [http-nio-5050-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 09:47:08.579 [http-nio-5050-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 09:47:29.423 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:47:29.428 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:47:31.372 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:47:31.382 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:51:35.180 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:51:35.180 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:51:38.716 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:51:38.716 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:51:51.483 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 09:52:20.328 [http-nio-5050-exec-7] ERROR l.i.m.c.MonitoryLogController - Internal server error during monitoryLog update
+2024-12-05 09:53:34.100 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:53:34.100 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:01.189 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:01.205 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:04.189 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:04.224 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:18.511 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:18.524 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:21.778 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:21.778 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:26.963 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:26.968 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:28.770 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:28.770 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:30.661 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:30.693 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:34.198 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:34.198 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:37.864 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:37.864 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:54:43.622 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:54:43.638 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:03.841 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:03.841 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:20.437 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:20.437 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:24.523 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:24.523 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:41.477 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:41.491 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:43.028 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:43.035 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:55:54.236 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:55:54.241 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:56:00.657 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:56:00.657 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:56:02.113 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:56:02.113 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:56:07.728 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:56:07.728 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:56:18.304 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:56:18.304 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:57:05.025 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:57:05.030 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:57:33.718 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:57:33.735 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:57:40.953 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:57:40.953 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:57:56.000 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:57:56.068 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:58:13.462 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:58:13.462 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:58:45.718 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:58:45.724 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:58:55.428 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:58:55.430 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:01.581 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:59:01.581 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:08.256 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:59:08.256 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:14.517 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:59:14.517 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:26.165 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:26.165 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:59:35.456 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 09:59:35.459 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:42.625 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 09:59:42.625 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:00.662 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:00.662 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:05.663 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:05.667 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:11.711 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:11.711 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:27.259 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:27.284 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:29.837 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:29.845 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:32.238 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:32.242 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:51.909 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:51.914 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:53.764 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:53.766 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:00:56.774 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:00:56.792 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:08.411 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:08.443 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:21.923 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:21.923 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:24.523 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:24.524 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:28.010 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:28.010 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:36.694 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:36.700 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:44.087 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:44.101 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:47.207 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:47.211 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:50.337 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:01:50.341 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:58.171 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:01:58.171 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:02:02.169 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:02:02.169 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:02:58.232 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:02:58.232 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:02.965 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:02.965 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:05.807 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:05.813 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:11.537 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:11.540 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:17.951 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:17.951 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:21.186 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:21.186 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:21.368 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to write: java.io.IOException: An established connection was aborted by the software in your host machine]
+2024-12-05 10:03:22.521 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:22.530 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:28.643 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:28.652 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:31.824 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:31.827 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:35.683 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:35.686 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:38.669 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:38.671 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:43.520 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:43.531 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:45.328 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:45.334 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:47.949 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:47.957 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:03:57.567 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:03:57.580 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:01.799 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:01.803 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:26.760 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:26.762 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:30.763 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:30.763 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:33.056 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:33.062 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:39.438 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:39.449 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:42.196 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:42.196 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:44.601 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:44.617 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:46.974 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:46.977 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:51.104 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:51.109 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:04:59.466 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:04:59.474 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:01.713 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:01.714 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:03.822 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:03.830 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:22.857 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:22.863 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:26.332 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:26.332 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:36.379 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:36.399 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:43.640 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:43.655 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:50.027 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:50.042 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:05:57.706 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:05:57.706 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:07:09.886 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:07:09.886 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:08:29.887 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:08:29.888 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:08:48.593 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:08:48.593 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:08:57.601 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:08:57.601 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:01.471 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:01.471 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:03.087 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:03.092 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:06.837 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:06.842 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:10.984 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:10.984 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:12.549 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:12.616 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:14.255 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:14.255 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:26.953 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:26.953 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:31.747 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:31.747 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:09:33.970 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:09:33.970 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:26.021 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:10:26.021 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:29.502 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:10:29.502 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:32.118 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:10:32.121 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:37.482 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:10:37.482 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:51.124 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:10:51.124 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:53.415 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:10:53.415 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:05.418 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:11:05.418 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:07.318 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:07.318 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:11:08.315 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:08.315 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:11:14.277 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 10:11:14.277 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 10:11:15.153 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:11:15.153 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:18.483 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:11:18.483 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:11:33.045 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:12:05.632 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:12:05.632 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:12:07.569 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:12:07.569 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:12:08.996 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:12:09.016 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:12:12.086 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:13:14.333 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:14.334 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:15.251 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:15.251 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:18.043 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:18.043 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:20.181 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:20.181 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:36.757 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:36.757 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:37.966 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:37.966 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:38.642 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:13:38.642 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:13:43.019 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:13:44.334 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:14:02.175 [http-nio-5050-exec-9] ERROR l.i.m.c.MonitoryLogController - Internal server error during monitoryLog update
+2024-12-05 10:15:08.741 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:15:08.741 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:15:39.318 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:15:39.318 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:16:13.108 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - MonitoryLog created successfully
+2024-12-05 10:16:16.883 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:16:16.883 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:17:09.406 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:17:09.406 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:18:16.813 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:18:16.813 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:18:19.202 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:18:19.202 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:18:27.627 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:18:27.627 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:18:38.295 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:18:38.295 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:18:46.097 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:19:04.509 [http-nio-5050-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'fieldId' is not present.]
+2024-12-05 10:19:46.486 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:19:46.486 [http-nio-5050-exec-8] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:06.246 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:06.249 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:11.894 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:11.894 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:13.873 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:13.888 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:16.128 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:16.128 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:21.044 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:21.044 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:23.712 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:20:23.712 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:20:27.526 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:20:53.683 [http-nio-5050-exec-7] ERROR l.i.m.c.MonitoryLogController - Internal server error during monitoryLog update
+2024-12-05 10:21:43.787 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:21:43.788 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:21:46.027 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:21:46.030 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:21:48.245 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:21:48.245 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:22:06.226 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:22:06.226 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:22:10.438 [http-nio-5050-exec-8] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 10:22:35.222 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - monitoryLog updated successfully
+2024-12-05 10:22:45.222 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 10:22:45.222 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 10:25:24.692 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 10:25:24.739 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 10:25:24.786 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

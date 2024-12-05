@@ -1,0 +1,387 @@
+2024-12-05 21:33:43.781 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 3300 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 21:33:43.783 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 21:33:43.784 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 21:33:44.829 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 21:33:44.952 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 114 ms. Found 7 JPA repository interfaces.
+2024-12-05 21:33:45.682 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 21:33:45.699 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 21:33:45.700 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 21:33:45.762 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 21:33:45.762 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1923 ms
+2024-12-05 21:33:45.917 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 21:33:45.996 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 21:33:46.041 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 21:33:46.436 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 21:33:46.473 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 21:33:46.820 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a62d697
+2024-12-05 21:33:46.823 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 21:33:46.897 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 21:33:46.898 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 21:33:48.232 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 21:33:48.652 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 21:33:49.073 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 21:33:49.135 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 21:33:49.542 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 21:33:49.715 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 21:33:50.422 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 21:33:50.433 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 7.248 seconds (process running for 8.211)
+2024-12-05 21:35:20.669 [http-nio-5050-exec-2] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 21:35:20.670 [http-nio-5050-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 21:35:20.671 [http-nio-5050-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-05 21:35:21.123 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:21.123 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:21.634 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:21.637 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:21.657 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:22.734 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:22.734 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:22.765 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:30.802 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:30.820 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:30.836 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:53.206 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:53.206 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:53.248 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:58.425 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:35:58.425 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:35:58.456 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:00.610 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:00.610 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:00.621 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:04.126 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:04.126 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:04.141 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:06.751 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:06.751 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:06.785 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:14.281 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:14.281 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:14.298 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:15.747 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:15.747 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:15.763 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:17.601 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:17.601 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:17.616 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:27.296 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:27.296 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:27.318 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:28.543 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:28.543 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:28.567 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:32.272 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:32.289 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:32.305 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:35.504 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:35.504 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:35.538 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:40.616 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:40.616 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:40.647 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:42.117 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:42.117 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:42.149 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:45.086 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:45.086 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:45.118 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:48.547 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:48.547 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:48.564 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:52.196 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:52.196 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:52.212 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:54.420 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:54.420 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:54.447 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:55.992 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:55.992 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:56.010 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:57.960 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:36:57.960 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:36:57.976 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:04.230 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:04.230 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:04.245 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:06.704 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:06.704 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:06.726 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:08.854 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:08.854 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:08.871 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:11.414 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:11.436 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:11.470 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:12.457 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:12.457 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:12.472 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:31.947 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:31.947 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:31.963 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:46.740 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:46.740 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:46.756 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:51.483 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:51.483 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:51.500 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:58.551 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:37:58.551 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:37:58.567 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:03.144 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:03.144 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:03.161 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:04.779 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:04.779 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:04.793 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:07.229 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:07.229 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:07.244 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:09.741 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:09.741 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:09.758 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:15.005 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:15.005 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:15.022 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:18.498 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:18.498 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:18.513 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:20.336 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:20.336 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:20.369 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:23.676 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:23.676 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:23.692 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:31.613 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:31.613 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:31.628 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:35.495 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:35.495 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:35.514 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:40.559 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:40.559 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:40.593 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:43.378 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:43.378 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:43.394 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:46.594 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:46.594 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:46.614 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:47.824 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:47.824 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:47.844 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:50.871 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:50.871 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:50.897 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:52.653 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:52.669 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:52.690 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:53.899 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:38:53.915 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:38:53.922 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:03.418 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:03.418 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:03.434 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:31.085 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:31.085 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:31.102 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:40.237 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:40.245 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:40.259 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:43.528 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:43.528 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:43.544 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:49.889 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:49.889 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:49.904 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:53.082 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:53.083 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:53.098 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:58.109 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:39:58.109 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:39:58.125 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:40:03.271 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:40:03.271 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:40:03.286 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:41:05.582 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:41:05.582 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:41:05.598 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:41:09.132 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:41:09.132 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:41:09.132 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:11.991 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:11.991 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:42:11.991 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:29.981 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:42:29.982 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:29.999 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:31.447 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:42:31.449 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:31.466 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:49.149 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:42:49.149 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:42:49.161 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:09.020 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:09.027 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:09.043 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:17.178 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:17.179 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:17.205 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:23.029 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:23.040 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:23.053 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:30.032 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:30.032 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:30.048 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:36.980 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:36.980 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:36.982 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:43.862 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:43.862 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:43.874 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:58.517 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:43:58.517 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:43:58.520 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:03.998 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:03.999 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:04.000 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:23.598 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:23.598 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:23.619 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:29.788 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:29.788 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:29.806 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:36.248 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:36.248 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:36.248 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:42.555 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:42.555 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:42.570 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:47.460 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:47.461 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:47.475 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:53.258 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:53.258 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:53.281 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:56.281 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:44:56.282 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:44:56.293 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:03.372 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:03.375 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:03.386 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:08.137 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:08.137 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:08.148 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:12.771 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:12.771 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:12.786 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:18.002 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:18.012 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:18.013 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:20.937 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:20.937 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:20.947 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:23.009 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:23.009 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:23.024 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:25.741 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:25.741 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:25.756 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:27.322 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:27.322 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:27.337 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:29.306 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:45:29.306 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:45:29.322 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:34.297 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:34.299 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:34.315 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:37.454 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:37.454 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:37.470 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:40.718 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:40.718 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:40.730 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:42.704 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:42.720 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:42.722 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:53.716 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:53.716 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:53.731 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:56.870 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:46:56.875 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:46:56.875 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:03.813 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:47:03.813 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:03.828 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:26.891 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:47:26.892 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:26.899 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:27.915 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:47:27.915 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:47:27.930 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:49:39.650 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:49:39.650 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:49:39.655 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:53:22.842 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:53:22.858 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:53:22.871 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:53:24.396 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:53:24.396 [http-nio-5050-exec-1] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:53:24.406 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:18.887 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:18.887 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:55:18.898 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:23.814 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:23.814 [http-nio-5050-exec-4] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:55:23.836 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:28.535 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:55:28.535 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:55:28.546 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:07.732 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:07.732 [http-nio-5050-exec-3] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:56:07.743 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:09.293 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:56:09.293 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:09.321 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:50.880 [http-nio-5050-exec-10] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:56:50.880 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:56:50.900 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:35.097 [http-nio-5050-exec-9] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:57:35.097 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:35.112 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:37.033 [http-nio-5050-exec-6] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:57:37.033 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:37.050 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:38.302 [http-nio-5050-exec-7] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:57:38.334 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:38.349 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:40.021 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:57:40.032 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:40.050 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:41.414 [http-nio-5050-exec-8] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 21:57:41.414 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:41.437 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 21:57:45.080 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:57:45.080 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 21:57:45.697 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:24.057 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 21:58:24.057 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:24.119 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:25.325 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:25.325 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 21:58:25.360 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:28.610 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 21:58:28.610 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:28.658 [http-nio-5050-exec-2] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:38.314 [http-nio-5050-exec-10] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 21:58:39.127 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 21:58:52.909 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - monitoryLog updated successfully
+2024-12-05 21:58:56.354 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 21:58:56.356 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 21:58:56.402 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 22:02:14.034 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Updating equipment staff with equipmentCode: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0 and staffId: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 22:02:14.070 [http-nio-5050-exec-9] INFO  l.i.m.controller.EquipmentController - Equipment staff updated successfully
+2024-12-05 22:04:02.679 [http-nio-5050-exec-6] INFO  l.i.m.controller.EquipmentController - Updating equipment field with equipmentCode: 48ae7ea5-f79b-48e7-9e56-e4ebd926b0a0 and fieldCode: 44767eed-0aab-423c-adb2-e13b38c512b1
+2024-12-05 22:04:02.760 [http-nio-5050-exec-6] INFO  l.i.m.controller.EquipmentController - Equipment field updated successfully
+2024-12-05 22:05:17.097 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 22:05:17.142 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 22:05:17.157 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

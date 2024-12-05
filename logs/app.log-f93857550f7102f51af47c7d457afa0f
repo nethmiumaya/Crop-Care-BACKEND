@@ -1,0 +1,99 @@
+2024-12-05 01:33:24.747 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 4916 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-05 01:33:24.749 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05 01:33:24.750 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-05 01:33:25.652 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-05 01:33:25.765 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 7 JPA repository interfaces.
+2024-12-05 01:33:26.523 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-05 01:33:26.536 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-05 01:33:26.537 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-05 01:33:26.598 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-05 01:33:26.599 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1803 ms
+2024-12-05 01:33:26.766 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-05 01:33:26.842 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-05 01:33:26.886 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-05 01:33:27.263 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-05 01:33:27.299 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-05 01:33:27.657 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e91facf
+2024-12-05 01:33:27.661 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-05 01:33:27.728 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-05 01:33:27.729 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-05 01:33:29.023 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-05 01:33:29.295 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 01:33:29.711 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-05 01:33:29.773 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-05 01:33:30.179 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-05 01:33:30.365 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-05 01:33:31.106 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-05 01:33:31.115 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 6.895 seconds (process running for 7.745)
+2024-12-05 01:33:43.803 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-05 01:33:43.804 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-05 01:33:43.805 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-12-05 01:33:44.134 [http-nio-5050-exec-4] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 01:33:44.134 [http-nio-5050-exec-1] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:33:46.842 [http-nio-5050-exec-6] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 01:34:03.770 [http-nio-5050-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 01:45:00.055 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 01:45:00.055 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:45:02.618 [http-nio-5050-exec-5] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 01:45:31.155 [http-nio-5050-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 01:54:09.001 [http-nio-5050-exec-2] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 01:54:09.001 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 01:54:10.294 [http-nio-5050-exec-7] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 01:54:10.297 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:54:19.877 [http-nio-5050-exec-10] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:54:19.988 [http-nio-5050-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.context.request.async.AsyncRequestNotUsableException: ServletOutputStream failed to write: java.io.IOException: An established connection was aborted by the software in your host machine]
+2024-12-05 01:54:20.963 [http-nio-5050-exec-6] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:54:20.985 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 01:54:24.387 [http-nio-5050-exec-1] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 01:54:24.388 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:54:27.152 [http-nio-5050-exec-5] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 01:54:30.906 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:04:27.196 [http-nio-5050-exec-6] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 02:04:27.196 [http-nio-5050-exec-9] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:04:31.796 [http-nio-5050-exec-4] INFO  l.i.main.controller.CropController - Fetching crop with id
+2024-12-05 02:04:45.258 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Updating crop with id: 71dab343-77eb-481a-8003-cdc78880fe3f
+2024-12-05 02:04:45.433 [http-nio-5050-exec-10] INFO  l.i.main.controller.CropController - Crop updated successfully
+2024-12-05 02:04:49.558 [http-nio-5050-exec-8] INFO  l.i.main.controller.CropController - Fetching all crops
+2024-12-05 02:04:49.560 [http-nio-5050-exec-3] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:07:19.068 [http-nio-5050-exec-2] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 02:07:19.068 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:07:21.678 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 02:07:35.234 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 02:11:19.745 [http-nio-5050-exec-9] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 02:11:19.745 [http-nio-5050-exec-4] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:11:30.649 [http-nio-5050-exec-1] INFO  l.i.m.c.MonitoryLogController - Fetching monitoryLog with code
+2024-12-05 02:11:30.655 [http-nio-5050-exec-7] INFO  l.i.main.controller.FieldController - Fetching field with id
+2024-12-05 02:11:35.521 [http-nio-5050-exec-3] INFO  l.i.m.c.MonitoryLogController - Fetching all monitoryLog
+2024-12-05 02:11:47.851 [http-nio-5050-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required part 'observedImage' is not present.]
+2024-12-05 02:15:17.689 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:15:20.173 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:15:53.871 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:15:53.933 [http-nio-5050-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<java.lang.Void> lk.ijse.main.controller.StaffController.updateStaff(java.lang.String,lk.ijse.main.dto.StaffDTO)]
+2024-12-05 02:16:07.373 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:26:36.607 [http-nio-5050-exec-5] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:26:38.545 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 02:27:59.895 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:28:01.738 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:28:17.286 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:28:17.382 [http-nio-5050-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `lk.ijse.main.dto.StaffDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6')]
+2024-12-05 02:28:22.470 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:29:48.298 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:29:51.304 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 02:30:24.380 [http-nio-5050-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `lk.ijse.main.dto.StaffDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('4f8325c8-93c2-467b-abea-9b2f629c0518')]
+2024-12-05 02:30:24.495 [http-nio-5050-exec-6] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:34:01.787 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:34:01.787 [http-nio-5050-exec-5] INFO  l.i.m.controller.VehicleController - Fetching all vehicle
+2024-12-05 02:34:06.979 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:34:22.819 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: d76e61d5-47be-4116-a6b1-5b1465a6af78
+2024-12-05 02:34:48.093 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:37:09.712 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:37:11.644 [http-nio-5050-exec-2] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:37:27.825 [http-nio-5050-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `lk.ijse.main.dto.StaffDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6')]
+2024-12-05 02:37:27.944 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:38:02.047 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching staff with id: f0154ff1-35db-4f7a-a3f0-b37ecf9e85a6
+2024-12-05 02:38:07.969 [http-nio-5050-exec-10] INFO  l.i.main.controller.StaffController - Fetching staff with id: 4f8325c8-93c2-467b-abea-9b2f629c0518
+2024-12-05 02:38:30.345 [http-nio-5050-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `lk.ijse.main.dto.StaffDTO` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('4f8325c8-93c2-467b-abea-9b2f629c0518')]
+2024-12-05 02:38:30.456 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-05 02:41:21.838 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-05 02:41:21.920 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-05 02:41:21.978 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

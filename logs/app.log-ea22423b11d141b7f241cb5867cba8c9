@@ -1,0 +1,43 @@
+2024-12-03 17:04:37.605 [main] INFO  lk.ijse.main.MainApplication - Starting MainApplication using Java 17.0.8 with PID 7976 (C:\Users\Umaya\Documents\2nd-sem final-BACKEND\main\build\classes\java\main started by Umaya in C:\Users\Umaya\Documents\2nd-sem final-BACKEND)
+2024-12-03 17:04:37.607 [main] DEBUG lk.ijse.main.MainApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03 17:04:37.608 [main] INFO  lk.ijse.main.MainApplication - The following 1 profile is active: "dev"
+2024-12-03 17:04:38.632 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-03 17:04:38.745 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 7 JPA repository interfaces.
+2024-12-03 17:04:39.474 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 5050 (http)
+2024-12-03 17:04:39.491 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 17:04:39.491 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 17:04:39.563 [main] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring embedded WebApplicationContext
+2024-12-03 17:04:39.564 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1898 ms
+2024-12-03 17:04:39.795 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-03 17:04:39.880 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-03 17:04:39.930 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-03 17:04:40.416 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-03 17:04:40.459 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-03 17:04:40.901 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d8d52be
+2024-12-03 17:04:40.904 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-03 17:04:40.980 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-03 17:04:40.981 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-03 17:04:42.736 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-03 17:04:43.173 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 17:04:43.722 [main] DEBUG l.i.m.c.JWTConfig$$SpringCGLIB$$0 - Filter 'JWTConfig' configured for use
+2024-12-03 17:04:43.808 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-03 17:04:44.316 [main] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-03 17:04:44.531 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-03 17:04:45.508 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 5050 (http) with context path '/main'
+2024-12-03 17:04:45.522 [main] INFO  lk.ijse.main.MainApplication - Started MainApplication in 8.46 seconds (process running for 9.304)
+2024-12-03 17:05:07.002 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[.[localhost].[/main] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 17:05:07.003 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-03 17:05:07.026 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 20 ms
+2024-12-03 17:05:07.487 [http-nio-5050-exec-1] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 17:05:36.686 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 17:05:36.865 [http-nio-5050-exec-9] INFO  l.i.main.controller.StaffController - Creating staff: StaffDTO(id=null, firstName=Gayanuka, lastName=Bulegoda, designation=MANAGER, gender=female, joinDate=Tue Dec 03 05:30:00 IST 2024, DOB=Tue Dec 03 05:30:00 IST 2024, addLine01=Matara, addLine02=null, addLine03=null, addLine04=null, addLine05=null, conNo=0776542341, email=hiru@gmail.com, role=ADMINISTRATIVE)
+2024-12-03 17:05:37.043 [http-nio-5050-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2024-12-03 17:05:37.044 [http-nio-5050-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'hiru@gmail.com' for key 'staff.UKpvctx4dbua9qh4p4s3gm3scrh'
+2024-12-03 17:05:37.073 [http-nio-5050-exec-9] ERROR l.i.main.controller.StaffController - Internal server error during staff creation
+2024-12-03 17:06:11.518 [http-nio-5050-exec-8] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 17:06:11.520 [http-nio-5050-exec-4] INFO  l.i.main.controller.StaffController - Creating staff: StaffDTO(id=null, firstName=Gayanuka, lastName=Bulegoda, designation=MANAGER, gender=female, joinDate=Tue Dec 03 05:30:00 IST 2024, DOB=Tue Dec 03 05:30:00 IST 2024, addLine01=Matara, addLine02=null, addLine03=null, addLine04=null, addLine05=null, conNo=0776542341, email=gnh@gmail.com, role=ADMINISTRATIVE)
+2024-12-03 17:07:22.133 [http-nio-5050-exec-3] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 17:08:12.821 [http-nio-5050-exec-7] INFO  l.i.main.controller.StaffController - Fetching all staff
+2024-12-03 17:09:13.018 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-03 17:09:13.021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-03 17:09:13.033 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
